@@ -8,7 +8,6 @@ import "./style.scss";
 
 export default function StickyMenu() {
   let { scrollY } = useScroll();
-  let scopeRef = useRef();
   let navRef = useRef();
   let [revealBtn, setRevealBtn] = useState(false);
   let [isPaused, setIsPaused] = useState(true);
@@ -81,8 +80,8 @@ export default function StickyMenu() {
   return (
     <>
       {/* sticky navbar  */}
-      <div ref={scopeRef} className="wrapperStickyMenu">
-        <ul ref={navRef} className="stickyMenu">
+      <div ref={navRef} className="wrapperStickyMenu">
+        <ul className="stickyMenu">
           <p className="navigateText">navigate</p>
           <MagneticNav>
             <li className="stickyMenyItems">home</li>
