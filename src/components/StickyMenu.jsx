@@ -52,7 +52,6 @@ export default function StickyMenu() {
       x: "35vw",
       duration: 0.8,
       ease: "Expo.easeIn",
-      // delay: 0.,
     });
     menuItems.forEach((item) => {
       tl.to(
@@ -130,9 +129,10 @@ export default function StickyMenu() {
           style={
             isShowNav
               ? { backgroundColor: "#455ce9" }
-              : { backgroundColor: "#000" }
+              : { backgroundColor: "#fff" }
           }
           className="openCloseBtn"
+          data-color={isShowNav}
         >
           <Lottie
             options={defaultOptions}

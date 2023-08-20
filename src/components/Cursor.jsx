@@ -1,18 +1,26 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import "./style.scss";
 
 export default function Cursor() {
+  let [size, setSize] = useState(60);
   let cursorRef = useRef(null);
 
   useEffect(() => {
     let handleMouseMove = (e) => {
+      let target = e.target;
+      if (target.getAttribute("data-hover")) {
+        setSize(200);
+      } else {
+        setSize(60);
+      }
       let xTo = gsap.quickTo(cursorRef.current, "x", {
-        duration: 2,
+        duration: 1.8,
         ease: "Elastic.easeOut",
       });
       let yTo = gsap.quickTo(cursorRef.current, "y", {
-        duration: 2,
+        duration: 1.8,
         ease: "Elastic.easeOut",
       });
 
@@ -29,5 +37,14 @@ export default function Cursor() {
     };
   }, []);
 
-  return <div ref={cursorRef} className="customCursor"></div>;
+  return (
+    <motion.div
+      animate={{ width: size, height: size }}
+      ref={cursorRef}
+      className="customCursor"
+      transition={{
+        type: "spring",
+      }}
+    ></motion.div>
+  );
 }
