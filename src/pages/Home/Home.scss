@@ -7,8 +7,9 @@
       .NameOfMe {
         text-transform: capitalize;
         font-size: 10vw;
-        margin-top: 18%;
+        margin-top: 24%;
         font-weight: bold;
+        font-family: "Raleway", sans-serif;
         margin-left: 15%;
         color: #e3e3e3;
         width: fit-content;
@@ -21,7 +22,8 @@
         text-transform: capitalize;
         font-size: 18px;
         margin-top: 20px;
-        color: #838383;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
         width: 65%;
         line-height: 30px;
         margin-left: 16%;
@@ -32,6 +34,7 @@
       background-size: 200%;
       background-position-x: -60rem;
       background-position-y: -3rem;
+      font-family: "Raleway", sans-serif;
       width: 100%;
       height: 100vh;
       background-repeat: no-repeat;
@@ -74,7 +77,6 @@
       background-repeat: no-repeat;
     }
   }
-
   .maskLayer {
     width: 100%;
     height: 100%;
@@ -88,6 +90,81 @@
     color: #000;
     mask-repeat: no-repeat;
     z-index: 9;
-    // pointer-events: none;
+  }
+
+  //
+  // //
+  // // //
+
+  // about section styles
+  .aboutSection {
+    margin-top: 8rem;
+    .wrapperAboutSection {
+      width: 70%;
+      margin: 0 auto;
+      .titleAbout {
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+        line-height: 25px;
+      }
+      .descAbout {
+        font-size: 55px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        font-weight: 900;
+        line-height: 75px;
+        margin-top: 1.5rem;
+        text-align: start;
+        span {
+          color: #ec4e39;
+        }
+      }
+    }
+  }
+  // my skills section styles
+  .mySkills {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    overflow: hidden;
+    .titleSkills {
+      font-size: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      text-transform: uppercase;
+      line-height: 25px;
+    }
+  }
+}
+.wrapperLogos {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .logoCuomn1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logoCuomn2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logoCuomn1,
+  .logoCuomn2 {
+    .wrapperImageLogo {
+      overflow: hidden;
+      margin: 2rem 3rem;
+      img {
+        display: inline-block;
+        width: 100%;
+        will-change: transform;
+      }
+    }
   }
 }
