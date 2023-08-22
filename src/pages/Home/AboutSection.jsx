@@ -14,6 +14,7 @@ import bootstrapLogo from "../../assets/svg/bootstrap-4.svg";
 import gsapLogo from "../../assets/svg/gsap.svg";
 import TSLogo from "../../assets/svg/typescript.svg";
 import framerLogo from "../../assets/svg/framer-motion.svg";
+import SplitType from "split-type";
 import SplitText from "../../utils/SplitText";
 import "./Home.scss";
 
@@ -25,9 +26,7 @@ export default function AboutSection() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
     let ctx = gsap.context(() => {
-      let splitDesc = new SplitText(descAboutSectionRef.current, {
-        type: "chars",
-      });
+      let splitDesc = new SplitType(descAboutSectionRef.current);
 
       gsap.from(splitDesc.chars, {
         opacity: 0.3,
@@ -39,8 +38,8 @@ export default function AboutSection() {
           trigger: triggerDesc.current,
           endTrigger: scopeRef.current,
           start: "top 85%",
-          end: "bottom 35%",
-          scrub: 2,
+          end: "center 38%",
+          scrub: 1,
           //   markers: {
           //     startColor: "#ffd700",
           //     endColor: "#ff0000",
@@ -59,21 +58,9 @@ export default function AboutSection() {
         <div ref={triggerDesc} className="wrapperAboutSection">
           <p className="titleAbout">about me</p>
           <p ref={descAboutSectionRef} className="descAbout">
-            I've<span>&nbsp;</span>Enjoyed<span>&nbsp;</span>Turning
-            <span>
-              &nbsp;Complex<span>&nbsp;</span>Problems
-            </span>{" "}
-            <span>&nbsp;</span>Into<span>&nbsp;</span>Simple,<span>&nbsp;</span>
-            Beautiful
-            <span>&nbsp;</span>And<span>&nbsp;</span>Intuitive
-            <span>&nbsp;</span>Designs.<span>&nbsp;</span>When
-            <span>&nbsp;</span>I'm<span>&nbsp;</span>Not<span>&nbsp;</span>
-            Pushing<span>&nbsp;</span>Pixels,<span>&nbsp;</span>You'll
-            <span>&nbsp;</span>Find<span>&nbsp;</span>Me<span>&nbsp;</span>
-            Cooking,
-            <span>&nbsp;</span>Gardening<span>&nbsp;</span>Or<span>&nbsp;</span>
-            Working<span>&nbsp;</span>Out<span>&nbsp;</span>In
-            <span>&nbsp;</span>The<span>&nbsp;</span>Park.
+            I've enjoyed turning <span>complex problems</span> into simple,
+            beautiful and intuitive designs. When I'm not pushing pixels, you'll
+            find me cooking, gardening or working out in the park.
           </p>
         </div>
       </div>
@@ -148,50 +135,6 @@ export default function AboutSection() {
             />
           </div>
         </div>
-      </div>
-      <div className="col-12 mt-5">
-        <p className="text-light fs-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae in
-          quaerat, impedit quod optio enim accusantium eius recusandae animi
-          nulla sint dolores officia, temporibus repudiandae? Incidunt vitae
-          consequuntur aspernatur adipisci! Ex eveniet, repellat pariatur
-          adipisci natus sequi qui, cumque voluptatum deserunt quod harum rerum
-          molestias distinctio incidunt blanditiis neque excepturi hic modi.
-          Molestias iure reprehenderit qui dignissimos, dolore illo
-          exercitationem! Nihil corporis minima sunt iure, itaque adipisci
-          corrupti! Accusantium porro facere ullam assumenda molestias quis
-          quibusdam quaerat totam illum voluptate reprehenderit corporis, labore
-          ea cumque nostrum doloremque officiis. Unde, totam. Veritatis
-          temporibus veniam autem blanditiis laborum vel voluptates, et
-          similique harum voluptatem totam officia! Quam non repudiandae,
-          consequuntur doloremque facilis cum quo aspernatur quas ratione culpa
-          vel fugiat beatae excepturi? Commodi eum cumque quisquam sed doloribus
-          sit adipisci at esse iusto? Tempora voluptatem voluptates molestiae
-          amet corporis, eveniet laborum? Libero est iure voluptatibus molestiae
-          distinctio natus voluptate molestias beatae ex!
-        </p>
-      </div>
-      <div className="col-12 mt-5">
-        <p className="text-light fs-3">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae in
-          quaerat, impedit quod optio enim accusantium eius recusandae animi
-          nulla sint dolores officia, temporibus repudiandae? Incidunt vitae
-          consequuntur aspernatur adipisci! Ex eveniet, repellat pariatur
-          adipisci natus sequi qui, cumque voluptatum deserunt quod harum rerum
-          molestias distinctio incidunt blanditiis neque excepturi hic modi.
-          Molestias iure reprehenderit qui dignissimos, dolore illo
-          exercitationem! Nihil corporis minima sunt iure, itaque adipisci
-          corrupti! Accusantium porro facere ullam assumenda molestias quis
-          quibusdam quaerat totam illum voluptate reprehenderit corporis, labore
-          ea cumque nostrum doloremque officiis. Unde, totam. Veritatis
-          temporibus veniam autem blanditiis laborum vel voluptates, et
-          similique harum voluptatem totam officia! Quam non repudiandae,
-          consequuntur doloremque facilis cum quo aspernatur quas ratione culpa
-          vel fugiat beatae excepturi? Commodi eum cumque quisquam sed doloribus
-          sit adipisci at esse iusto? Tempora voluptatem voluptates molestiae
-          amet corporis, eveniet laborum? Libero est iure voluptatibus molestiae
-          distinctio natus voluptate molestias beatae ex!
-        </p>
       </div>
     </>
   );

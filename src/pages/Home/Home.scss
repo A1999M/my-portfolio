@@ -93,8 +93,6 @@
   }
 
   //
-  // //
-  // // //
 
   // about section styles
   .aboutSection {
@@ -123,6 +121,9 @@
       }
     }
   }
+
+  //
+
   // my skills section styles
   .mySkills {
     width: 70%;
@@ -137,33 +138,62 @@
       line-height: 25px;
     }
   }
-}
-.wrapperLogos {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  .wrapperLogos {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 
-  .logoCuomn1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .logoCuomn1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logoCuomn2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logoCuomn1,
+    .logoCuomn2 {
+      .wrapperImageLogo {
+        overflow: hidden;
+        margin: 2rem 3rem;
+        img {
+          display: inline-block;
+          width: 100%;
+          will-change: transform;
+        }
+      }
+    }
   }
-  .logoCuomn2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logoCuomn1,
-  .logoCuomn2 {
-    .wrapperImageLogo {
-      overflow: hidden;
-      margin: 2rem 3rem;
-      img {
-        display: inline-block;
-        width: 100%;
-        will-change: transform;
+
+  //
+
+  // what i do section styles
+  .wrapperWhatIdo {
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 70%;
+    .titleWhatIdo {
+      font-size: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      text-transform: uppercase;
+      line-height: 25px;
+    }
+    .textWhatIDo {
+      font-size: 55px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      font-weight: 900;
+      line-height: 75px;
+      margin-top: 1.5rem;
+      text-align: start;
+      font-kerning: none;
+      span {
+        color: #ec4e39;
       }
     }
   }

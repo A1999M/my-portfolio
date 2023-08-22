@@ -15,7 +15,7 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
         trigger: allLogos[1],
         start: "center 90%",
         id: "logoTrigger",
-        end: "center 10%",
+        end: "center 30%",
         scrub: 1,
       },
     });
@@ -32,8 +32,7 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
           clipPath: "inset(0% 0% 0% 0%)",
           scale: 1,
           opacity: 1,
-          duration: 1.5,
-          ease: "Expo.easeOut",
+          ease: "none",
         },
         "<0.15"
       );
