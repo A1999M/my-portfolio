@@ -176,12 +176,16 @@
     margin: 0 auto;
     margin-top: 10rem;
     width: 70%;
-    .titleWhatIdo {
-      font-size: 21px;
-      font-family: "Raleway", sans-serif;
-      color: #b7ab98;
-      text-transform: uppercase;
-      line-height: 25px;
+    .wrapperTitleWhatIdo {
+      overflow: hidden;
+      .titleWhatIdo {
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+        line-height: 25px;
+      }
     }
     .textWhatIDo {
       font-size: 55px;
@@ -196,5 +200,23 @@
         color: #ec4e39;
       }
     }
+  }
+  // demo works section styles
+  .wrapperDemoWorksTitle {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    overflow: hidden;
+    .titleDemo {
+      font-kerning: none;
+      font-size: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      text-transform: uppercase;
+    }
+  }
+  .wrapperDemoWorksVideo {
+    width: 100vw;
+    margin-top: 3rem;
   }
 }

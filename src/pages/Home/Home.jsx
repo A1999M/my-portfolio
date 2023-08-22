@@ -5,6 +5,7 @@ import MaskStatus from "../../context/MaskStatus";
 import Navbar from "../../components/Navbar";
 import useMousePosition from "../../utils/useMousePosition";
 import WhatIDo from "./WhatIDo";
+import DemoWorks from "./DemoWorks";
 import { motion } from "framer-motion";
 import MaskHeroHeader from "./MaskHeroHeader";
 import "./Home.scss";
@@ -25,6 +26,7 @@ export default function Home() {
           <HeroHeader />
           <AboutSection />
           <WhatIDo />
+          <DemoWorks />
         </div>
         {/* <motion.div
           className="row maskLayer p-0"

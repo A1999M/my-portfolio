@@ -10,9 +10,24 @@ export default function WhatIDo() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    let titleSplit = new SplitType(titleRef.current);
     const descSplit = new SplitType(whatIdoRef.current);
 
     let ctx = gsap.context(() => {
+      gsap.from(titleSplit.chars, {
+        opacity: 0,
+        y: 100,
+        perspective: 200,
+        stagger: 0.05,
+        duration: 1,
+        ease: "Expo.easeOut",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 85%",
+          end: "bottom 0%",
+          toggleActions: "restart reverse restart reverse",
+        },
+      });
       gsap.from(descSplit.chars, {
         opacity: 0.3,
         stagger: 0.3,
@@ -36,9 +51,11 @@ export default function WhatIDo() {
     <>
       <div ref={scopeRef} className="col-12">
         <div className="wrapperWhatIdo">
-          <p ref={titleRef} className="titleWhatIdo">
-            what i do
-          </p>
+          <div className="wrapperTitleWhatIdo">
+            <p ref={titleRef} className="titleWhatIdo">
+              what i do
+            </p>
+          </div>
           <p ref={whatIdoRef} className="textWhatIDo">
             I Build Scalable <span>Websites</span> From Scratch That Fit
             Seamlessly With design. My Focus Is On <span>Micro Animations</span>{" "}
@@ -46,176 +63,6 @@ export default function WhatIDo() {
             CMS.
           </p>
         </div>
-      </div>
-      <div className="col-12">
-        <p>
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem, aperiam enim placeat sed, sunt modi quasi consectetur
-            laborum iusto molestiae esse. Ducimus quaerat consectetur eaque, nam
-            quia minima aperiam.
-          </span>
-          <span>
-            Vel, nobis veniam. Deleniti, iusto odit natus culpa suscipit sunt
-            repudiandae obcaecati temporibus eaque architecto aspernatur
-            accusamus aperiam debitis possimus facilis itaque recusandae hic
-            molestiae omnis aliquid sint distinctio quisquam.
-          </span>
-          <span>
-            Repellendus aspernatur, nobis voluptatum sequi deserunt aperiam rem
-            tempore fugiat consectetur. Eum beatae explicabo placeat voluptatem
-            laboriosam iste laborum, amet et aperiam excepturi quam eaque minima
-            aliquam aut, debitis expedita.
-          </span>
-          <span>
-            Ex repellendus, eos magni rem minus distinctio ut quas voluptas
-            debitis cupiditate error, ducimus, nesciunt laboriosam? Cum tempore
-            in distinctio aperiam sequi itaque, pariatur iure id sed sint?
-            Possimus, minus!
-          </span>
-          <span>
-            Reprehenderit nemo vel voluptatum voluptate obcaecati! Atque velit,
-            nostrum eveniet aspernatur veritatis quia sed culpa maiores
-            accusantium voluptates saepe pariatur, obcaecati quisquam provident,
-            molestiae quod doloribus impedit minus nesciunt modi?
-          </span>
-        </p>
-      </div>
-      <div className="col-12">
-        <p>
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem, aperiam enim placeat sed, sunt modi quasi consectetur
-            laborum iusto molestiae esse. Ducimus quaerat consectetur eaque, nam
-            quia minima aperiam.
-          </span>
-          <span>
-            Vel, nobis veniam. Deleniti, iusto odit natus culpa suscipit sunt
-            repudiandae obcaecati temporibus eaque architecto aspernatur
-            accusamus aperiam debitis possimus facilis itaque recusandae hic
-            molestiae omnis aliquid sint distinctio quisquam.
-          </span>
-          <span>
-            Repellendus aspernatur, nobis voluptatum sequi deserunt aperiam rem
-            tempore fugiat consectetur. Eum beatae explicabo placeat voluptatem
-            laboriosam iste laborum, amet et aperiam excepturi quam eaque minima
-            aliquam aut, debitis expedita.
-          </span>
-          <span>
-            Ex repellendus, eos magni rem minus distinctio ut quas voluptas
-            debitis cupiditate error, ducimus, nesciunt laboriosam? Cum tempore
-            in distinctio aperiam sequi itaque, pariatur iure id sed sint?
-            Possimus, minus!
-          </span>
-          <span>
-            Reprehenderit nemo vel voluptatum voluptate obcaecati! Atque velit,
-            nostrum eveniet aspernatur veritatis quia sed culpa maiores
-            accusantium voluptates saepe pariatur, obcaecati quisquam provident,
-            molestiae quod doloribus impedit minus nesciunt modi?
-          </span>
-        </p>
-      </div>
-      <div className="col-12">
-        <p>
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem, aperiam enim placeat sed, sunt modi quasi consectetur
-            laborum iusto molestiae esse. Ducimus quaerat consectetur eaque, nam
-            quia minima aperiam.
-          </span>
-          <span>
-            Vel, nobis veniam. Deleniti, iusto odit natus culpa suscipit sunt
-            repudiandae obcaecati temporibus eaque architecto aspernatur
-            accusamus aperiam debitis possimus facilis itaque recusandae hic
-            molestiae omnis aliquid sint distinctio quisquam.
-          </span>
-          <span>
-            Repellendus aspernatur, nobis voluptatum sequi deserunt aperiam rem
-            tempore fugiat consectetur. Eum beatae explicabo placeat voluptatem
-            laboriosam iste laborum, amet et aperiam excepturi quam eaque minima
-            aliquam aut, debitis expedita.
-          </span>
-          <span>
-            Ex repellendus, eos magni rem minus distinctio ut quas voluptas
-            debitis cupiditate error, ducimus, nesciunt laboriosam? Cum tempore
-            in distinctio aperiam sequi itaque, pariatur iure id sed sint?
-            Possimus, minus!
-          </span>
-          <span>
-            Reprehenderit nemo vel voluptatum voluptate obcaecati! Atque velit,
-            nostrum eveniet aspernatur veritatis quia sed culpa maiores
-            accusantium voluptates saepe pariatur, obcaecati quisquam provident,
-            molestiae quod doloribus impedit minus nesciunt modi?
-          </span>
-        </p>
-      </div>
-      <div className="col-12">
-        <p>
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem, aperiam enim placeat sed, sunt modi quasi consectetur
-            laborum iusto molestiae esse. Ducimus quaerat consectetur eaque, nam
-            quia minima aperiam.
-          </span>
-          <span>
-            Vel, nobis veniam. Deleniti, iusto odit natus culpa suscipit sunt
-            repudiandae obcaecati temporibus eaque architecto aspernatur
-            accusamus aperiam debitis possimus facilis itaque recusandae hic
-            molestiae omnis aliquid sint distinctio quisquam.
-          </span>
-          <span>
-            Repellendus aspernatur, nobis voluptatum sequi deserunt aperiam rem
-            tempore fugiat consectetur. Eum beatae explicabo placeat voluptatem
-            laboriosam iste laborum, amet et aperiam excepturi quam eaque minima
-            aliquam aut, debitis expedita.
-          </span>
-          <span>
-            Ex repellendus, eos magni rem minus distinctio ut quas voluptas
-            debitis cupiditate error, ducimus, nesciunt laboriosam? Cum tempore
-            in distinctio aperiam sequi itaque, pariatur iure id sed sint?
-            Possimus, minus!
-          </span>
-          <span>
-            Reprehenderit nemo vel voluptatum voluptate obcaecati! Atque velit,
-            nostrum eveniet aspernatur veritatis quia sed culpa maiores
-            accusantium voluptates saepe pariatur, obcaecati quisquam provident,
-            molestiae quod doloribus impedit minus nesciunt modi?
-          </span>
-        </p>
-      </div>
-      <div className="col-12">
-        <p>
-          <span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem, aperiam enim placeat sed, sunt modi quasi consectetur
-            laborum iusto molestiae esse. Ducimus quaerat consectetur eaque, nam
-            quia minima aperiam.
-          </span>
-          <span>
-            Vel, nobis veniam. Deleniti, iusto odit natus culpa suscipit sunt
-            repudiandae obcaecati temporibus eaque architecto aspernatur
-            accusamus aperiam debitis possimus facilis itaque recusandae hic
-            molestiae omnis aliquid sint distinctio quisquam.
-          </span>
-          <span>
-            Repellendus aspernatur, nobis voluptatum sequi deserunt aperiam rem
-            tempore fugiat consectetur. Eum beatae explicabo placeat voluptatem
-            laboriosam iste laborum, amet et aperiam excepturi quam eaque minima
-            aliquam aut, debitis expedita.
-          </span>
-          <span>
-            Ex repellendus, eos magni rem minus distinctio ut quas voluptas
-            debitis cupiditate error, ducimus, nesciunt laboriosam? Cum tempore
-            in distinctio aperiam sequi itaque, pariatur iure id sed sint?
-            Possimus, minus!
-          </span>
-          <span>
-            Reprehenderit nemo vel voluptatum voluptate obcaecati! Atque velit,
-            nostrum eveniet aspernatur veritatis quia sed culpa maiores
-            accusantium voluptates saepe pariatur, obcaecati quisquam provident,
-            molestiae quod doloribus impedit minus nesciunt modi?
-          </span>
-        </p>
       </div>
     </>
   );
