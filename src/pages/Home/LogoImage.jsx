@@ -15,7 +15,7 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
         trigger: allLogos[1],
         start: "center 90%",
         id: "logoTrigger",
-        end: "center 35%",
+        end: "center 42%",
         scrub: 1,
       },
     });

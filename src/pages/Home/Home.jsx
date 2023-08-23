@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import AboutSection from "./AboutSection";
 import HeroHeader from "./HeroHeader";
 import MaskStatus from "../../context/MaskStatus";
@@ -9,15 +9,16 @@ import DemoWorks from "./DemoWorks";
 import { motion } from "framer-motion";
 import MyProjects from "./MyProjects";
 import MaskHeroHeader from "./MaskHeroHeader";
+import Experience from "./Experience";
 import "./Home.scss";
 
 export default function Home() {
-  // let [mixStatus, setMixStatus] = useContext(MaskStatus);
-  // let { x, y } = useMousePosition();
-  // let [isHover, setIsHover] = useState();
-  // let size = isHover ? 300 : 60;
-  // let mix = mixStatus ? "difference" : "normal";
-  // let pointerStatus = mixStatus ? "initial" : "none";
+  let [mixStatus, setMixStatus] = useContext(MaskStatus);
+  let { x, y } = useMousePosition();
+  let [isHover, setIsHover] = useState();
+  let size = isHover ? 300 : 60;
+  let mix = mixStatus ? "difference" : "normal";
+  let pointerStatus = mixStatus ? "initial" : "none";
 
   return (
     <>
@@ -29,6 +30,7 @@ export default function Home() {
           <WhatIDo />
           <DemoWorks />
           <MyProjects />
+          <Experience />
         </div>
         {/* <motion.div
           className="row maskLayer p-0"
@@ -46,6 +48,7 @@ export default function Home() {
           <WhatIDo />
           <DemoWorks />
           <MyProjects />
+          <Experience />
         </motion.div> */}
       </div>
     </>

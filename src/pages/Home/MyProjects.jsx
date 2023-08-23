@@ -18,7 +18,6 @@ export default function MyProjects() {
       scrollTrigger: {
         trigger: titleRef.current,
         endTrigger: allProjects[0],
-        // toggleActions: "restart none none reverse",
         scrub: 1,
         start: "top 80%",
         end: "bottom 25%",
@@ -65,7 +64,6 @@ export default function MyProjects() {
           trigger: titleRef.current,
           start: "top 90%",
           end: "bottom 0%",
-          toggleActions: "restart reverse restart reverse",
         },
       });
     }, scopeRef.current);
@@ -74,7 +72,7 @@ export default function MyProjects() {
       tl.kill();
       ctx.revert();
     };
-  });
+  }, []);
 
   return (
     <>

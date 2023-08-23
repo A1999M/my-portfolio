@@ -38,7 +38,7 @@ export default function AboutSection() {
           trigger: triggerDesc.current,
           endTrigger: scopeRef.current,
           start: "top 85%",
-          end: "center 38%",
+          end: "center 46%",
           scrub: 1,
           //   markers: {
           //     startColor: "#ffd700",
@@ -50,7 +50,7 @@ export default function AboutSection() {
     }, scopeRef.current);
 
     return () => ctx.revert();
-  });
+  }, []);
 
   return (
     <>

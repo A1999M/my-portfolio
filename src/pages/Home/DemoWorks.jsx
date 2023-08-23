@@ -26,7 +26,6 @@ export default function DemoWorks() {
           trigger: titleRef.current,
           start: "top 90%",
           end: "bottom 0%",
-          toggleActions: "restart reverse restart reverse",
         },
       });
 
@@ -45,7 +44,7 @@ export default function DemoWorks() {
     return () => {
       ctx.revert();
     };
-  });
+  }, []);
 
   return (
     <>

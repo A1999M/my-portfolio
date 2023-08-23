@@ -25,7 +25,6 @@ export default function WhatIDo() {
           trigger: titleRef.current,
           start: "top 85%",
           end: "bottom 0%",
-          toggleActions: "restart reverse restart reverse",
         },
       });
       gsap.from(descSplit.chars, {

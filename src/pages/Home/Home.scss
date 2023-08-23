@@ -105,6 +105,8 @@
       width: 70%;
       margin: 0 auto;
       .titleAbout {
+        word-spacing: 4px;
+        font-kerning: none;
         font-size: 21px;
         font-family: "Raleway", sans-serif;
         color: #b7ab98;
@@ -112,6 +114,7 @@
         line-height: 25px;
       }
       .descAbout {
+        font-kerning: none;
         font-size: 55px;
         font-family: "Raleway", sans-serif;
         color: #b7ab98;
@@ -135,6 +138,8 @@
     margin-top: 10rem;
     overflow: hidden;
     .titleSkills {
+      font-kerning: none;
+      word-spacing: 4px;
       font-size: 21px;
       font-family: "Raleway", sans-serif;
       color: #b7ab98;
@@ -183,6 +188,7 @@
     .wrapperTitleWhatIdo {
       overflow: hidden;
       .titleWhatIdo {
+        word-spacing: 4px;
         font-kerning: none;
         font-size: 21px;
         font-family: "Raleway", sans-serif;
@@ -215,6 +221,7 @@
     margin-top: 10rem;
     overflow: hidden;
     .titleDemo {
+      word-spacing: 4px;
       font-kerning: none;
       font-size: 21px;
       font-family: "Raleway", sans-serif;
@@ -237,10 +244,11 @@
     .wrapperTitleProjects {
       overflow: hidden;
       .titleProject {
+        word-spacing: 4px;
         font-kerning: none;
         font-size: 21px;
         font-family: "Raleway", sans-serif;
-        color: #d4ccbd;
+        color: #b7ab98;
         text-transform: uppercase;
       }
     }
@@ -297,6 +305,41 @@
             opacity: 1;
             transform: translateX(-50%) translateY(-50%);
           }
+        }
+      }
+    }
+  }
+
+  //
+
+  // my Experience section styles
+  .wrapperExperience {
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 15rem;
+    .wrapperTitleExperience {
+      overflow: hidden;
+      .titleExperience {
+        word-spacing: 4px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+      }
+    }
+    .wrapperDescExperience {
+      .descExperience {
+        font-size: 55px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        font-weight: 900;
+        line-height: 75px;
+        margin-top: 1.5rem;
+        text-align: start;
+        font-kerning: none;
+        span {
+          color: #ec4e39;
         }
       }
     }
