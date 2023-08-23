@@ -17,6 +17,7 @@ export default function MyProjects() {
       ease: "none",
       scrollTrigger: {
         trigger: titleRef.current,
+        toggleActions: "restart none none reverse",
         endTrigger: allProjects[0],
         scrub: 1,
         start: "top 80%",
@@ -54,14 +55,13 @@ export default function MyProjects() {
 
       gsap.from(splitTitle.chars, {
         opacity: 0,
-        perspective: 200,
-        rotate: 27,
         y: 100,
-        stagger: 0.05,
         duration: 1,
         ease: "Expo.easeOut",
+        stagger: 0.02,
         scrollTrigger: {
           trigger: titleRef.current,
+          toggleActions: "restart none none reverse",
           start: "top 90%",
           end: "bottom 0%",
         },

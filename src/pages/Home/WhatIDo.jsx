@@ -23,6 +23,7 @@ export default function WhatIDo() {
         ease: "Expo.easeOut",
         scrollTrigger: {
           trigger: titleRef.current,
+          toggleActions: "restart none none reverse",
           start: "top 85%",
           end: "bottom 0%",
         },

@@ -23,6 +23,7 @@ export default function DemoWorks() {
         duration: 1,
         ease: "Expo.easeOut",
         scrollTrigger: {
+          toggleActions: "restart none none reverse",
           trigger: titleRef.current,
           start: "top 90%",
           end: "bottom 0%",

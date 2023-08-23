@@ -9,6 +9,7 @@ import DemoWorks from "./DemoWorks";
 import { motion } from "framer-motion";
 import MyProjects from "./MyProjects";
 import MaskHeroHeader from "./MaskHeroHeader";
+import HowHelp from "./HowHelp";
 import Experience from "./Experience";
 import "./Home.scss";
 
@@ -29,8 +30,9 @@ export default function Home() {
           <AboutSection />
           <WhatIDo />
           <DemoWorks />
-          <MyProjects />
           <Experience />
+          <MyProjects />
+          <HowHelp />
         </div>
         {/* <motion.div
           className="row maskLayer p-0"

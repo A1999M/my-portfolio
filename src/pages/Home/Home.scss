@@ -344,4 +344,35 @@
       }
     }
   }
+
+  // how to help section styles
+  .wrapperHowToHelp {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15rem;
+    .wrapperTitleHelp {
+      overflow: hidden;
+      .titleHelp {
+        word-spacing: 3px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+      }
+    }
+    .descHowHelp {
+      font-size: 55px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      font-weight: 900;
+      line-height: 75px;
+      margin-top: 1.5rem;
+      text-align: start;
+      font-kerning: none;
+      span {
+        color: #ec4e39;
+      }
+    }
+  }
 }
