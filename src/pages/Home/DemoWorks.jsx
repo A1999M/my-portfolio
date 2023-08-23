@@ -7,6 +7,7 @@ import demoWorks from "../../assets/videos/Minh Pham - Multidisciplinary Designe
 export default function DemoWorks() {
   let scopeRef = useRef(null);
   let titleRef = useRef(null);
+  let demoWorksVideo = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +29,17 @@ export default function DemoWorks() {
           toggleActions: "restart reverse restart reverse",
         },
       });
+
+      gsap.from(demoWorksVideo.current, {
+        clipPath: "inset(0% 100% 0% 100%)",
+        ease: "none",
+        scrollTrigger: {
+          trigger: demoWorksVideo.current,
+          start: "top 100%",
+          end: "center 67%",
+          scrub: 1,
+        },
+      });
     }, scopeRef.current);
 
     return () => {
@@ -45,7 +57,7 @@ export default function DemoWorks() {
         </div>
       </div>
       <div className="col-12">
-        <div className="wrapperDemoWorksVideo">
+        <div ref={demoWorksVideo} className="wrapperDemoWorksVideo">
           <video
             src={demoWorks}
             style={{ height: "90vh", width: "100%", objectFit: "cover" }}

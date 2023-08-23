@@ -7,6 +7,7 @@ import useMousePosition from "../../utils/useMousePosition";
 import WhatIDo from "./WhatIDo";
 import DemoWorks from "./DemoWorks";
 import { motion } from "framer-motion";
+import MyProjects from "./MyProjects";
 import MaskHeroHeader from "./MaskHeroHeader";
 import "./Home.scss";
 
@@ -27,12 +28,13 @@ export default function Home() {
           <AboutSection />
           <WhatIDo />
           <DemoWorks />
+          <MyProjects />
         </div>
         {/* <motion.div
           className="row maskLayer p-0"
           animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
-            WebkitMaskSize: `${size}px`,
+            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px , center`,
+            WebkitMaskSize: `${size}px , contain`,
             mixBlendMode: mix,
             // pointerEvents: pointerStatus,
           }}
@@ -41,6 +43,9 @@ export default function Home() {
           <Navbar />
           <MaskHeroHeader setMixStatus={setMixStatus} setIsHover={setIsHover} />
           <AboutSection />
+          <WhatIDo />
+          <DemoWorks />
+          <MyProjects />
         </motion.div> */}
       </div>
     </>

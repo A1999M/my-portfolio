@@ -1,11 +1,11 @@
-import { useLayoutEffect, useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import Home from "./pages/Home";
 import MaskStatus from "./context/MaskStatus";
 import AboutUs from "./pages/AboutUs";
-import LocomotiveScroll from "locomotive-scroll";
 // import Navbar from "./components/Navbar";
-import Work from "./pages/Work";
+import LocomotiveScroll from "locomotive-scroll";
 import StickyMenu from "./components/StickyMenu";
+import Work from "./pages/Work";
 import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -24,9 +24,9 @@ export default function App() {
 
   return (
     <>
+      <StickyMenu />
       <MaskStatus.Provider value={[mixStatus, setMixStatus]}>
         {/* <Navbar /> */}
-        <StickyMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
