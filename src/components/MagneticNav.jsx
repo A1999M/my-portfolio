@@ -28,7 +28,7 @@ export default function MagneticNav({ children }) {
       xTo(0);
       yTo(0);
     });
-  });
+  }, []);
 
   return React.cloneElement(children, { ref: magneticRef });
 }

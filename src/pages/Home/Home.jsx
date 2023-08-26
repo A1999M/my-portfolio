@@ -10,16 +10,17 @@ import { motion } from "framer-motion";
 import MyProjects from "./MyProjects";
 import MaskHeroHeader from "./MaskHeroHeader";
 import HowHelp from "./HowHelp";
+import ContactMe from "./ContactMe";
 import Experience from "./Experience";
 import "./Home.scss";
 
 export default function Home() {
-  let [mixStatus, setMixStatus] = useContext(MaskStatus);
-  let { x, y } = useMousePosition();
-  let [isHover, setIsHover] = useState();
-  let size = isHover ? 300 : 60;
-  let mix = mixStatus ? "difference" : "normal";
-  let pointerStatus = mixStatus ? "initial" : "none";
+  // let [mixStatus, setMixStatus] = useContext(MaskStatus);
+  // let { x, y } = useMousePosition();
+  // let [isHover, setIsHover] = useState();
+  // let size = isHover ? 300 : 60;
+  // let mix = mixStatus ? "difference" : "normal";
+  // let pointerStatus = mixStatus ? "initial" : "none";
 
   return (
     <>
@@ -33,6 +34,7 @@ export default function Home() {
           <Experience />
           <MyProjects />
           <HowHelp />
+          <ContactMe />
         </div>
         {/* <motion.div
           className="row maskLayer p-0"

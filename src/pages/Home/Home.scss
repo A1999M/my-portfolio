@@ -375,4 +375,158 @@
       }
     }
   }
+
+  //
+
+  // contact me section styles
+  .wrapperContactMe {
+    margin: 0 auto;
+    margin-top: 12rem;
+    width: 70%;
+    .contactMeForm {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .wrapperLabelMessage {
+        overflow: hidden;
+        .messageLabel {
+          font-size: 24px;
+          color: #e3e3e3;
+          margin-top: 5rem;
+          margin-bottom: 1rem;
+          text-transform: capitalize;
+        }
+      }
+      #msgInput {
+        width: 100%;
+        line-height: 35px;
+        resize: none;
+        font-size: 20px;
+        color: #b7ab98;
+        border: 0;
+        // border-bottom: 1px solid #b7ab987c;
+        text-transform: capitalize;
+        padding: 13px 0;
+        display: block;
+        outline: none;
+        background-color: transparent;
+        &::placeholder {
+          font-size: 20px;
+          color: #b7ab98;
+          text-transform: capitalize;
+        }
+      }
+      .sendMeBtn {
+        border: 0;
+        outline: 0;
+        background-color: #fff;
+        color: #000;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-top: 3rem;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 140px;
+        }
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #455ce9;
+          content: "";
+          z-index: -1;
+          clip-path: circle(0% at 50% 150%);
+          transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        &:hover {
+          color: #fff;
+          &::after {
+            clip-path: circle(110% at 50% 100%);
+          }
+        }
+      }
+      .wrapperFormInput {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 6%;
+        overflow: hidden;
+        width: 47%;
+        .wrapperLabel {
+          overflow: hidden;
+          label {
+            font-size: 24px;
+            color: #e3e3e3;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+          }
+        }
+
+        input {
+          font-size: 20px;
+          color: #b7ab98;
+          border: 0;
+          border-bottom: 1px solid #b7ab987c;
+          text-transform: capitalize;
+          padding: 13px 0;
+          padding-left: 5px;
+          outline: none;
+          background-color: transparent;
+          width: 100%;
+          &::placeholder {
+            font-size: 20px;
+            color: #b7ab98;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .emailInput {
+        margin-right: 0;
+      }
+      .orgInput {
+        width: 100%;
+        margin-right: 0;
+      }
+      .msgInput {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  .wrapper-modal {
+    background-color: #fff;
+    width: fit-content;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    position: sticky;
+    top: 3rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 18px;
+      text-transform: capitalize;
+      margin: 0 10px;
+      color: #000;
+      text-align: center;
+    }
+  }
 }

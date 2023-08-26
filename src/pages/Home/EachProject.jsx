@@ -13,7 +13,7 @@ export default function EachProject({ imageSrc, name, index }) {
       document.querySelector(`.eachProject${index}`),
       "x",
       {
-        duration: 0.7,
+        duration: 0.3,
         ease: "Back.easeOut",
       }
     );
@@ -21,7 +21,7 @@ export default function EachProject({ imageSrc, name, index }) {
       document.querySelector(`.eachProject${index}`),
       "y",
       {
-        duration: 0.7,
+        duration: 0.3,
         ease: "Back.easeOut",
       }
     );
