@@ -1,11 +1,9 @@
-import { useEffect, useContext } from "react";
-import MaskStatus from "../../context/MaskStatus";
+import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/all";
+import MagneticBtn from "../../components/MagneticBtn";
 import { gsap } from "gsap";
 
 export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
-  let [, setMixStatus] = useContext(MaskStatus);
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let allLogos = gsap.utils.toArray(".eachLogoImage");
@@ -15,7 +13,7 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
         trigger: allLogos[1],
         start: "center 90%",
         id: "logoTrigger",
-        end: "center 42%",
+        end: "center 0%",
         scrub: 1,
       },
     });
@@ -44,18 +42,10 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
   }, []);
 
   return (
-    <div
-      data-scroll
-      data-scroll-speed={scrollSpeed}
-      className="wrapperImageLogo"
-    >
-      <img
-        onMouseEnter={() => setMixStatus(true)}
-        onMouseLeave={() => setMixStatus(false)}
-        className="eachLogoImage"
-        src={imageSrc}
-        alt={imageAlt}
-      />
-    </div>
+    <MagneticBtn>
+      <div className="wrapperImageLogo">
+        <img className="eachLogoImage" src={imageSrc} alt={imageAlt} />
+      </div>
+    </MagneticBtn>
   );
 }

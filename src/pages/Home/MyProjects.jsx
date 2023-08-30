@@ -4,55 +4,15 @@ import SplitType from "split-type";
 import EachProject from "./EachProject";
 import { gsap } from "gsap";
 
-export default function MyProjects() {
+export default function MyProjects({ mask }) {
   let scopeRef = useRef(null);
   let titleRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let splitTitle = new SplitType(titleRef.current);
-    let allProjects = gsap.utils.toArray(".eachProject");
-
-    let tl = gsap.timeline({
-      ease: "none",
-      scrollTrigger: {
-        trigger: titleRef.current,
-        toggleActions: "restart none none reverse",
-        endTrigger: allProjects[0],
-        scrub: 1,
-        start: "top 80%",
-        end: "bottom 25%",
-      },
-    });
 
     let ctx = gsap.context(() => {
-      allProjects.forEach((item) => {
-        let name = item.querySelector(".nameOfProject");
-        let splitName = new SplitType(name);
-        tl.from(
-          item,
-          {
-            opacity: 0,
-            y: 100,
-            duration: 1,
-            ease: "Back.easeOut",
-          },
-          "<0.2"
-        );
-        tl.from(
-          splitName.chars,
-          {
-            y: 50,
-            opacity: 0,
-            clipPath: "inset(100% 0% 100% 0%)",
-            stagger: 0.02,
-            duration: 0.7,
-            ease: "Expo.easeOut",
-          },
-          "<0.2"
-        );
-      });
-
       gsap.from(splitTitle.chars, {
         opacity: 0,
         y: 100,
@@ -69,14 +29,17 @@ export default function MyProjects() {
     }, scopeRef.current);
 
     return () => {
-      tl.kill();
       ctx.revert();
     };
   }, []);
 
   return (
     <>
-      <div ref={scopeRef} className="col-12 myProjects">
+      <div
+        style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+        ref={scopeRef}
+        className="col-12 myProjects"
+      >
         <div className="wrapperTitleProjects">
           <p ref={titleRef} className="titleProject">
             my projects

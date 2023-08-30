@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 
-export default function WhatIDo() {
+export default function WhatIDo({ mask, changeMix, changeHover }) {
   let whatIdoRef = useRef(null);
   let titleRef = useRef(null);
   let scopeRef = useRef(null);
@@ -31,12 +31,11 @@ export default function WhatIDo() {
       gsap.from(descSplit.chars, {
         opacity: 0.3,
         stagger: 0.3,
-        duration: 0.5,
         ease: "none",
         scrollTrigger: {
           trigger: whatIdoRef.current,
           start: "top 85%",
-          end: "center 45%",
+          end: "center 55%",
           scrub: 2,
         },
       });
@@ -56,12 +55,33 @@ export default function WhatIDo() {
               what i do
             </p>
           </div>
-          <p ref={whatIdoRef} className="textWhatIDo">
-            I Build Scalable <span>Websites</span> From Scratch That Fit
-            Seamlessly With design. My Focus Is On <span>Micro Animations</span>{" "}
-            , Transitions And Interaction. For Content Management I Use Kirby
-            CMS.
-          </p>
+          {!mask ? (
+            <p
+              onMouseEnter={() => {
+                changeHover(true);
+                changeMix(false);
+              }}
+              onMouseLeave={() => {
+                changeHover(false);
+                changeMix(true);
+              }}
+              ref={whatIdoRef}
+              className="textWhatIDo"
+            >
+              I Develop Websites And Web Applications, Using Animation Libraries
+              Like
+              <span style={{ color: "#ec4e39" }}> GSAP </span>and
+              <span style={{ color: "#ec4e39" }}> Framer Motion </span>
+              That Makes My Application More Interesting Than It Actually is.
+            </p>
+          ) : (
+            <p ref={whatIdoRef} className="textWhatIDo">
+              When I'm Not At The Computer, I'm Usually Hanging Out With My Two
+              Cats, Going To The Gym, Take
+              <span style={{ color: "#ffd700" }}> Nature </span>Walks With My
+              Friends. Or Study Investment Books.
+            </p>
+          )}
         </div>
       </div>
     </>

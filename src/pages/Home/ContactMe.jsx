@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import SplitType from "split-type";
 import { gsap } from "gsap";
 
-export default function ContactMe() {
+export default function ContactMe({ mask }) {
   let [statusMsg, setStatusMsg] = useState(true);
   let [showModal, setShowModal] = useState(false);
   let whichModalRef = useRef(null);
@@ -139,12 +139,17 @@ export default function ContactMe() {
   return (
     <>
       <MsgModal
+        mask={mask}
         animation={whichModalRef.current}
         showModal={showModal}
         statusMsg={statusMsg}
         message={modalMessageRef.current}
       />
-      <div ref={scopeRef} className="col-12">
+      <div
+        style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+        ref={scopeRef}
+        className="col-12"
+      >
         <div className="wrapperContactMe">
           <form ref={formRef} onSubmit={sendEmail} className="contactMeForm">
             <FormInput
@@ -192,45 +197,6 @@ export default function ContactMe() {
             </MagneticNav>
           </form>
         </div>
-      </div>
-      <div className="col-12">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-          ducimus dignissimos quam excepturi, natus, commodi, adipisci minima
-          enim consectetur ad et tenetur necessitatibus? Sunt tempore architecto
-          ex sed, facere perferendis! Laudantium ratione cum earum cupiditate
-          quibusdam blanditiis reiciendis quos commodi provident maiores neque,
-          reprehenderit dignissimos fugit. Totam sunt rem deleniti, quaerat,
-          praesentium, a fugit rerum sit dolore debitis nemo molestias. Voluptas
-          nam laudantium, earum dolorum, doloribus ducimus, perspiciatis saepe
-          eos neque exercitationem ut incidunt officiis facere ullam. Laboriosam
-          ratione, quidem consequatur voluptates aperiam, assumenda ipsa eveniet
-          doloremque illum deleniti culpa. Nesciunt dicta libero cupiditate
-          quisquam a voluptate ut veritatis quam numquam aspernatur iste id
-          quasi unde, exercitationem sapiente pariatur quae minima iusto
-          deleniti placeat porro alias nemo. Non, distinctio optio! Quibusdam,
-          suscipit delectus. Cumque quisquam aperiam, similique rerum
-          necessitatibus asperiores eligendi sequi molestias velit, nostrum eius
-          repellat aliquid expedita corrupti. Eos ex nesciunt inventore delectus
-          obcaecati placeat minima a hic? Voluptate dignissimos quae nemo quam,
-          numquam itaque est eaque dolorem unde autem placeat dolor dicta
-          similique corporis vel reprehenderit quia facere ducimus! Dignissimos
-          numquam reiciendis exercitationem debitis labore modi enim. Quasi
-          velit laborum sequi magni officiis dicta possimus, facilis illo
-          magnam, expedita inventore autem similique, impedit laudantium animi.
-          Nemo tempore aperiam iusto similique dicta impedit consequatur aliquid
-          vitae atque possimus! Tempora aut distinctio laudantium nisi adipisci
-          sit blanditiis facilis, fugit suscipit deleniti unde quos recusandae
-          veniam voluptate? Officiis ratione sunt sapiente. Nihil quas iusto
-          nemo velit quaerat deserunt. Dolore, earum. Maiores facere deleniti
-          natus corrupti, illum nobis, laborum blanditiis obcaecati recusandae,
-          nihil dolore hic et magnam repellat. Assumenda enim, nesciunt quo,
-          tempore accusantium, officia ab modi facere nemo eligendi expedita.
-          Soluta eligendi corporis asperiores sapiente id assumenda quis!
-          Temporibus labore quo nisi illo rerum, ab nesciunt aliquam ipsa quod
-          deserunt inventore magnam facilis officiis minus quidem ullam cumque
-          vel dignissimos?
-        </p>
       </div>
     </>
   );

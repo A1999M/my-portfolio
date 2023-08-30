@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 import demoWorks from "../../assets/videos/Minh Pham - Multidisciplinary Designer.mp4";
 
-export default function DemoWorks() {
+export default function DemoWorks({ mask }) {
   let scopeRef = useRef(null);
   let titleRef = useRef(null);
   let demoWorksVideo = useRef(null);
@@ -51,13 +51,21 @@ export default function DemoWorks() {
     <>
       <div className="col-12">
         <div ref={scopeRef} className="wrapperDemoWorksTitle">
-          <p ref={titleRef} className="titleDemo">
+          <p
+            style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+            ref={titleRef}
+            className="titleDemo"
+          >
             demo of my works
           </p>
         </div>
       </div>
       <div className="col-12">
-        <div ref={demoWorksVideo} className="wrapperDemoWorksVideo">
+        <div
+          style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+          ref={demoWorksVideo}
+          className="wrapperDemoWorksVideo"
+        >
           <video
             src={demoWorks}
             style={{ height: "90vh", width: "100%", objectFit: "cover" }}

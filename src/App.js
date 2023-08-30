@@ -2,7 +2,6 @@ import { useState, useLayoutEffect } from "react";
 import Home from "./pages/Home";
 import MaskStatus from "./context/MaskStatus";
 import AboutUs from "./pages/AboutUs";
-// import Navbar from "./components/Navbar";
 import LocomotiveScroll from "locomotive-scroll";
 import StickyMenu from "./components/StickyMenu";
 import Work from "./pages/Work";
@@ -26,7 +25,6 @@ export default function App() {
     <>
       <StickyMenu />
       <MaskStatus.Provider value={[mixStatus, setMixStatus]}>
-        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />

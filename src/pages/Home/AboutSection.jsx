@@ -18,27 +18,62 @@ import SplitType from "split-type";
 import SplitText from "../../utils/SplitText";
 import "./Home.scss";
 
-export default function AboutSection() {
+export default function AboutSection({
+  changeMix,
+  changeHover,
+  mask,
+  color,
+  spanColor,
+}) {
   let descAboutSectionRef = useRef(null);
   let triggerDesc = useRef(null);
   let scopeRef = useRef(null);
+  let titleRef = useRef(null);
+  let titleSkillRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
+
     let ctx = gsap.context(() => {
       let splitDesc = new SplitType(descAboutSectionRef.current);
+      let splitTitle = new SplitType(titleRef.current);
+      let splitTitleSkill = new SplitType(titleSkillRef.current);
 
+      gsap.from(splitTitleSkill.chars, {
+        opacity: 0,
+        y: 60,
+        stagger: 0.05,
+        duration: 1,
+        ease: "Expo.easeOut",
+        scrollTrigger: {
+          trigger: titleSkillRef.current,
+          start: "top 90%",
+          end: "bottom 0%",
+          toggleActions: "restart none none reverse",
+        },
+      });
+      gsap.from(splitTitle.chars, {
+        opacity: 0,
+        y: 60,
+        stagger: 0.05,
+        duration: 1,
+        ease: "Expo.easeOut",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 90%",
+          end: "bottom 0%",
+          toggleActions: "restart none none reverse",
+        },
+      });
       gsap.from(splitDesc.chars, {
         opacity: 0.3,
-        // clipPath: "inset(0% 100% 0% 0%)",
         stagger: 0.3,
-        duration: 0.5,
         ease: "none",
         scrollTrigger: {
           trigger: triggerDesc.current,
           endTrigger: scopeRef.current,
           start: "top 85%",
-          end: "center 46%",
+          end: "center 52%",
           scrub: 1,
           //   markers: {
           //     startColor: "#ffd700",
@@ -56,20 +91,69 @@ export default function AboutSection() {
     <>
       <div ref={scopeRef} className="col-12 aboutSection">
         <div ref={triggerDesc} className="wrapperAboutSection">
-          <p className="titleAbout">about me</p>
-          <p ref={descAboutSectionRef} className="descAbout">
-            I've enjoyed turning <span>complex problems</span> into simple,
-            beautiful and intuitive designs. When I'm not pushing pixels, you'll
-            find me cooking, gardening or working out in the park.
-          </p>
+          <div>
+            <p ref={titleRef} style={{ color: color }} className="titleAbout">
+              about me
+            </p>
+          </div>
+          {!mask ? (
+            <p
+              onMouseEnter={() => {
+                changeHover(true);
+                changeMix(false);
+              }}
+              onMouseLeave={() => {
+                changeHover(false);
+                changeMix(true);
+              }}
+              style={{ color: color }}
+              ref={descAboutSectionRef}
+              className="descAbout"
+            >
+              I'm a Front End Developer With 3 Years Of Experience. My Focus is
+              On <span style={{ color: spanColor }}> Web Animations </span>About
+              Creating User Friendly and Beautiful Digital Experience.
+            </p>
+          ) : (
+            <p
+              onMouseEnter={() => {
+                changeHover(true);
+                changeMix(false);
+              }}
+              onMouseLeave={() => {
+                changeHover(false);
+                changeMix(true);
+              }}
+              style={{ color: color }}
+              ref={descAboutSectionRef}
+              className="descAbout"
+            >
+              I'm Currently Learning
+              <span style={{ color: spanColor }}> Next.js</span>, And I Have a
+              Strong Interest In 3D Websites. As a Result, I Allocate a Amount
+              Of My Time To Learning 3D Libraries.
+            </p>
+          )}
+          <p></p>
         </div>
       </div>
       {/* my skills section  */}
-      <div data-scroll data-scroll-speed="0.1" className="col-12 mySkills">
-        <p className="titleSkills">my skills</p>
+      <div className="col-12 mySkills">
+        <p ref={titleSkillRef} className="titleSkills">
+          my skills
+        </p>
       </div>
-      <div className="col-12">
-        <div className="wrapperLogos">
+      <div className="col-12 mySkillsLogo">
+        <div
+          style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+          onMouseEnter={() => {
+            changeHover(true);
+          }}
+          onMouseLeave={() => {
+            changeHover(false);
+          }}
+          className="wrapperLogos"
+        >
           <div className="logoCuomn1">
             <LogoImage
               imageSrc={reactLogo}
