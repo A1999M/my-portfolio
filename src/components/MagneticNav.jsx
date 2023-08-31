@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-export default function MagneticNav({ children }) {
+let MagneticNav = memo(({ children }) => {
   let magneticRef = useRef();
 
   useEffect(() => {
@@ -31,4 +31,6 @@ export default function MagneticNav({ children }) {
   }, []);
 
   return React.cloneElement(children, { ref: magneticRef });
-}
+});
+
+export default MagneticNav;

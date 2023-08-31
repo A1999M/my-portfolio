@@ -1,15 +1,18 @@
+import { memo, useContext } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import MagneticNav from "./MagneticNav";
+import MaskStatus from "../context/MaskStatus";
 import "./style.scss";
 
-export default function Navbar({ visibility }) {
+let Navbar = memo(({ mask }) => {
+  const [, , index] = useContext(MaskStatus);
   let ulVarient = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: {
-        delay: 2.5,
+        delay: 0.05,
         when: "beforeChildren",
         staggerChildren: 0.1,
       },
@@ -30,13 +33,17 @@ export default function Navbar({ visibility }) {
 
   return (
     <div
-      style={{ visibility: visibility, height: "fit-content" }}
+      style={
+        !mask
+          ? { visibility: "visible", height: "fit-content" }
+          : { visibility: "hidden", height: "fit-content" }
+      }
       className="col-12"
     >
       <motion.ul
         variants={ulVarient}
         initial="hidden"
-        animate="show"
+        animate={index >= 9 ? "show" : "hidden"}
         className="wrapperNavbar"
       >
         <motion.li variants={liVarient} className="navbarItem">
@@ -62,4 +69,6 @@ export default function Navbar({ visibility }) {
       </motion.ul>
     </div>
   );
-}
+});
+
+export default Navbar;

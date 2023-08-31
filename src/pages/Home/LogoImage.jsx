@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/all";
 import MagneticBtn from "../../components/MagneticBtn";
 import { gsap } from "gsap";
 
-export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
+export default function LogoImage({ imageSrc, imageAlt }) {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let allLogos = gsap.utils.toArray(".eachLogoImage");
@@ -11,9 +11,9 @@ export default function LogoImage({ imageSrc, imageAlt, scrollSpeed }) {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: allLogos[1],
-        start: "center 90%",
         id: "logoTrigger",
-        end: "center 0%",
+        start: "center 65%",
+        end: "bottom 0%",
         scrub: 1,
       },
     });

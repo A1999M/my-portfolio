@@ -31,18 +31,19 @@ export default function HowHelp({ mask, changeMix, changeHover }) {
         opacity: 0.3,
         duration: 1,
         ease: "Expo.easeOut",
-        stagger: 0.02,
+        stagger: 0.05,
         scrollTrigger: {
           scrub: 1,
           trigger: descRef.current,
-          start: "top 85%",
-          end: "center 33%",
+          start: "center 75%",
+          end: "bottom 65%",
         },
       });
     }, scopeRef.current);
 
     return () => {
       ctx.revert();
+      ScrollTrigger.refresh();
     };
   }, []);
 
@@ -69,7 +70,8 @@ export default function HowHelp({ mask, changeMix, changeHover }) {
               className="descHowHelp"
             >
               Thanks For Reading a Little Bit About Me. I’m Always Happy To Chat
-              You Can Send Me An Email To See If We're a Good Fit.
+              You Can Send Me An <span style={{ color: "#ffd700" }}>Email</span>{" "}
+              To See If We're a Good Fit.
             </p>
           ) : (
             <p

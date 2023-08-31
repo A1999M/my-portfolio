@@ -25,8 +25,8 @@
   .heroHeader {
     padding: 0;
     background-image: url(../../assets/image/mainDarkMan.png);
-    background-size: 38%;
-    background-position-y: 10%;
+    background-size: 42%;
+    background-position-y: 5%;
     background-position-x: 97%;
     background-blend-mode: difference;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
         font-weight: bold;
         font-family: "Raleway", sans-serif;
         letter-spacing: 0px;
-        margin-left: 12%;
+        margin-left: 5%;
         font-style: italic;
         color: #e3e3e3;
         line-height: 9rem;
@@ -59,8 +59,8 @@
         font-family: "Raleway", sans-serif;
         color: #b7ab98;
         width: 35%;
-        line-height: 25px;
-        margin-left: 13%;
+        line-height: 24px;
+        margin-left: 6%;
         will-change: transform;
       }
     }
@@ -120,9 +120,10 @@
   // about section styles
   .aboutSection {
     margin-top: 8rem;
+    overflow: hidden;
     .wrapperAboutSection {
-      width: 70%;
-      margin: 0 auto;
+      width: 85%;
+      margin-left: 5%;
       div {
         overflow: hidden;
         .titleAbout {
@@ -156,8 +157,8 @@
 
   // my skills section styles
   .mySkills {
-    width: 75%;
-    margin: 0 auto;
+    width: 85%;
+    margin-left: 5%;
     margin-top: 10rem;
     overflow: hidden;
     .titleSkills {
@@ -174,7 +175,7 @@
     .wrapperLogos {
       margin-top: 1rem;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-evenly;
       flex-direction: column;
 
@@ -184,18 +185,19 @@
         justify-content: space-between;
       }
       .logoCuomn2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @extend .logoCuomn1;
+      }
+      .logoCuomn3 {
+        @extend .logoCuomn2;
       }
       .logoCuomn1,
-      .logoCuomn2 {
+      .logoCuomn2,
+      .logoCuomn3 {
         .wrapperImageLogo {
-          // overflow: hidden;
-          margin: 2rem 3rem;
+          margin: 3rem 4rem;
           img {
             display: inline-block;
-            width: 100%;
+            width: 115%;
             will-change: transform;
             mix-blend-mode: multiply;
           }
@@ -208,9 +210,9 @@
 
   // what i do section styles
   .wrapperWhatIdo {
-    margin: 0 auto;
     margin-top: 10rem;
-    width: 70%;
+    margin-left: 5%;
+    width: 82%;
     .wrapperTitleWhatIdo {
       overflow: hidden;
       .titleWhatIdo {
@@ -242,11 +244,11 @@
 
   // demo works section styles
   .wrapperDemoWorksTitle {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 10rem;
     overflow: hidden;
     .titleDemo {
+      margin-left: 5%;
       word-spacing: 4px;
       font-kerning: none;
       font-size: 21px;
@@ -256,7 +258,7 @@
     }
   }
   .wrapperDemoWorksVideo {
-    width: 100vw;
+    width: 100%;
     margin-top: 3rem;
   }
 
@@ -264,9 +266,9 @@
 
   // my projects section styles
   .myProjects {
-    margin: 0 auto;
     margin-top: 10rem;
-    width: 70%;
+    margin-left: 5%;
+    width: 85%;
     .wrapperTitleProjects {
       overflow: hidden;
       .titleProject {
@@ -340,8 +342,8 @@
 
   // my Experience section styles
   .wrapperExperience {
-    margin: 0 auto;
-    width: 70%;
+    margin-left: 5%;
+    width: 85%;
     margin-top: 15rem;
     .wrapperTitleExperience {
       overflow: hidden;
@@ -373,8 +375,8 @@
 
   // how to help section styles
   .wrapperHowToHelp {
-    width: 70%;
-    margin: 0 auto;
+    margin-left: 5%;
+    width: 85%;
     margin-top: 15rem;
     .wrapperTitleHelp {
       overflow: hidden;
@@ -392,7 +394,7 @@
       font-family: "Raleway", sans-serif;
       color: #b7ab98;
       font-weight: 700;
-      line-height: 85px;
+      line-height: 83px;
       margin-top: 1.5rem;
       text-align: start;
       font-kerning: none;
@@ -406,9 +408,9 @@
 
   // contact me section styles
   .wrapperContactMe {
-    margin: 0 auto;
-    margin-top: 12rem;
-    width: 70%;
+    margin-left: 5%;
+    margin-top: 8rem;
+    width: 85%;
     .contactMeForm {
       display: flex;
       align-items: center;
@@ -457,6 +459,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 3%;
         span {
           display: inline-block;
           width: 100%;
@@ -532,27 +535,6 @@
         width: 100%;
         margin-right: 0;
       }
-    }
-  }
-  .wrapper-modal {
-    background-color: #fff;
-    width: fit-content;
-    z-index: 2;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 50px;
-    position: sticky;
-    top: 3rem;
-    right: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    p {
-      font-size: 18px;
-      text-transform: capitalize;
-      margin: 0 10px;
-      color: #000;
-      text-align: center;
     }
   }
 }

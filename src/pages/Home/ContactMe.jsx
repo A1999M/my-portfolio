@@ -37,7 +37,8 @@ export default function ContactMe({ mask }) {
         stagger: 0.02,
         scrollTrigger: {
           trigger: messageLabelRef.current,
-          start: "top 85%",
+          toggleActions: "restart none none reverse",
+          start: "top 80%",
           end: "bottom 0%",
         },
       });
@@ -49,6 +50,7 @@ export default function ContactMe({ mask }) {
         delay: 0.1,
         scrollTrigger: {
           trigger: messageInputRef.current,
+          toggleActions: "restart none none reverse",
           start: "top 85%",
           end: "bottom 0%",
         },
@@ -57,6 +59,7 @@ export default function ContactMe({ mask }) {
       let labelTl = gsap.timeline({
         scrollTrigger: {
           trigger: allLabels[0],
+          toggleActions: "restart none none reverse",
           start: "top 95%",
           end: "bottom 0%",
         },
@@ -65,6 +68,7 @@ export default function ContactMe({ mask }) {
         scrollTrigger: {
           trigger: allInputs[0],
           start: "top 95%",
+          toggleActions: "restart none none reverse",
           end: "bottom 0%",
         },
       });

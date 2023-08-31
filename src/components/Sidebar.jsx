@@ -1,69 +1,87 @@
-import { useEffect, useRef } from "react";
+import { useRef, memo, useContext } from "react";
 import webLogo from "../assets/svg/web.svg";
 import telLogo from "../assets/svg/telegram.svg";
 import whatsAppLogo from "../assets/svg/whatsapp.svg";
 import MagneticBtn from "./MagneticBtn";
+import MaskStatus from "../context/MaskStatus";
 import emailLogo from "../assets/svg/email.svg";
-import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import "./style.scss";
 
-export default function Sidebar({ mask }) {
+let Sidebar = memo(({ mask }) => {
+  const [, , index] = useContext(MaskStatus);
   let wrapperRef = useRef();
 
-  useEffect(() => {
-    let tl = gsap.timeline();
-    let icons = gsap.utils.toArray(".fixSidebarIcon");
-
-    setTimeout(() => {
-      icons.map((icon) => {
-        tl.fromTo(
-          icon,
-          {
-            opacity: 0,
-            y: -100,
-            scale: 0,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.5,
-            ease: "Back.easeOut",
-          },
-          "<0.15"
-        );
-      });
-    }, 2500);
-
-    return () => {
-      tl.kill();
-    };
-  }, []);
+  let ulVarient = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        delay: 0.05,
+        staggerChildren: 0.1,
+        staggerDirection: -1,
+      },
+    },
+  };
+  let liVarient = {
+    hidden: { opacity: 0, y: 50 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 0.7,
+        ease: "backOut",
+      },
+    },
+  };
 
   return (
     <>
-      <div
+      <motion.div
+        variants={ulVarient}
+        initial="hidden"
+        animate={index >= 9 ? "show" : "hidden"}
         style={!mask ? { visibility: "visible" } : { visibility: "hidden" }}
         ref={wrapperRef}
         className="wrapperSidebarr"
       >
         <MagneticBtn>
-          <img src={webLogo} className="fixSidebarIcon" alt="web logo" />
+          <motion.img
+            variants={liVarient}
+            src={webLogo}
+            className="fixSidebarIcon"
+            alt="web logo"
+          />
         </MagneticBtn>
         <MagneticBtn>
-          <img src={telLogo} className="fixSidebarIcon" alt="telegram logo" />
+          <motion.img
+            variants={liVarient}
+            src={telLogo}
+            className="fixSidebarIcon"
+            alt="telegram logo"
+          />
         </MagneticBtn>
         <MagneticBtn>
-          <img
+          <motion.img
+            variants={liVarient}
             src={whatsAppLogo}
             className="fixSidebarIcon"
             alt="whatsapp logo"
           />
         </MagneticBtn>
         <MagneticBtn>
-          <img src={emailLogo} className="fixSidebarIcon" alt="email logo" />
+          <motion.img
+            variants={liVarient}
+            src={emailLogo}
+            className="fixSidebarIcon"
+            alt="email logo"
+          />
         </MagneticBtn>
-      </div>
+      </motion.div>
     </>
   );
-}
+});
+
+export default Sidebar;

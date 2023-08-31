@@ -8,8 +8,17 @@ html {
 
 body {
   will-change: transform;
+  -webkit-font-smoothing: antialiased !important;
   overflow-x: hidden;
   // height: auto;
   background-color: #000;
   font-family: "Raleway", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
