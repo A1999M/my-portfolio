@@ -76,7 +76,7 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
               I Develop Websites And Web Applications, Using Animation Libraries
               Like
               <span style={{ color: "#ec4e39" }}> GSAP </span>
-              {/* <span style={{ color: "#ec4e39" }}> Framer Motion </span> */}
+              <span style={{ color: "#ec4e39" }}> Framer Motion </span>
               That Makes My Applications More Interesting Than It Actually is.
             </p>
           ) : (
@@ -84,7 +84,7 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
               When I'm Not At The Computer, I'm Usually Hanging Out With My Two
               Cats, Going To The Gym, Take
               <span style={{ color: "#ffd700" }}> Nature </span>Walks With My
-              Friends. Or Read Investment Books.
+              Friends. Or Read investment Books.
             </p>
           )}
         </div>

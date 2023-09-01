@@ -27,7 +27,7 @@
     background-image: url(../../assets/image/mainDarkMan.png);
     background-size: 42%;
     background-position-y: 5%;
-    background-position-x: 97%;
+    background-position-x: 108%;
     background-blend-mode: difference;
     background-repeat: no-repeat;
     width: 100%;
@@ -534,6 +534,57 @@
       .msgInput {
         width: 100%;
         margin-right: 0;
+      }
+    }
+  }
+
+  // what i do2 section styles
+  .WhatIDo2 {
+    margin-top: 12rem;
+    // coding
+    .wrapperWhatIDo2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 5%;
+      border: 1px solid #b7ab9852;
+      border-left: 0;
+      border-right: 0;
+      .titleWID {
+        font-family: "Raleway", sans-serif;
+        font-size: 7.5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-style: italic;
+        color: #b7ab98;
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100dvw;
+          height: 100%;
+          background-color: #ec4e39;
+          clip-path: inset(100% 0% 100% 0%);
+          z-index: -1;
+          content: "";
+          transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        &:hover {
+          color: #000;
+          &::after {
+            clip-path: inset(0% 0% 0% 0%);
+          }
+        }
+      }
+      .descWID {
+        font-weight: 600;
+        width: 35%;
+        line-height: 27px;
+        text-transform: capitalize;
+        font-family: "Raleway", sans-serif;
+        color: #000;
       }
     }
   }

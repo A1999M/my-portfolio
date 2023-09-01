@@ -4,20 +4,18 @@ import HeroHeader from "./HeroHeader";
 import MaskStatus from "../../context/MaskStatus";
 import Navbar from "../../components/Navbar";
 import useMousePosition from "../../utils/useMousePosition";
+import RightSidebar from "../../components/RightSidebar";
 import WhatIDo from "./WhatIDo";
+import WhatIDo2 from "./WhatIDo2";
 import DemoWorks from "./DemoWorks";
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import MyProjects from "./MyProjects";
 import HowHelp from "./HowHelp";
 import ContactMe from "./ContactMe";
 import Sidebar from "../../components/Sidebar";
 import "./Home.scss";
 import Loader from "../../components/Loader";
+import MySkills from "./MySkills";
 
 export default function Home() {
   let [mixStatus, setMixStatus] = useContext(MaskStatus);
@@ -44,9 +42,9 @@ export default function Home() {
     <>
       <Loader />
       <motion.div
-        initial={{ opacity: 0, display: "none" }}
-        animate={{ opacity: 1, display: "block" }}
-        transition={{ delay: 3 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2 }}
         className="container-fluid homePage"
       >
         {/* normal content  */}
@@ -55,7 +53,7 @@ export default function Home() {
           <div className="col-1">
             <Sidebar changeMix={setMixStatus} mask={false} />
           </div>
-          <div className="col-11">
+          <div className="col-10">
             <HeroHeader
               mask={false}
               color={"#e3e3e3"}
@@ -71,6 +69,8 @@ export default function Home() {
               changeMix={setMixStatus}
               changeHover={setIsHover}
             />
+            <WhatIDo2 mask={false} />
+            <MySkills changeHover={setIsHover} mask={false} />
             <WhatIDo
               changeMix={setMixStatus}
               changeHover={setIsHover}
@@ -85,6 +85,9 @@ export default function Home() {
               mask={false}
             />
             <ContactMe mask={false} />
+          </div>
+          <div className="col-1">
+            <RightSidebar positionY={yPos} />
           </div>
         </div>
         {/* mask content  */}
@@ -101,7 +104,7 @@ export default function Home() {
           <div className="col-1">
             <Sidebar changeMix={setMixStatus} mask={true} />
           </div>
-          <div className="col-11">
+          <div className="col-10">
             <HeroHeader
               mask={true}
               color={"#000"}
@@ -117,6 +120,8 @@ export default function Home() {
               changeMix={setMixStatus}
               changeHover={setIsHover}
             />
+            <WhatIDo2 mask={true} />
+            <MySkills changeHover={setIsHover} mask={true} />
             <WhatIDo
               changeMix={setMixStatus}
               changeHover={setIsHover}
@@ -130,6 +135,9 @@ export default function Home() {
               mask={true}
             />
             <ContactMe mask={true} />
+          </div>
+          <div className="col-1">
+            <RightSidebar positionY={yPos} />
           </div>
         </motion.div>
       </motion.div>

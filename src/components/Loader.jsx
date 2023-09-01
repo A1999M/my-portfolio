@@ -26,15 +26,15 @@ export default function Loader() {
       height: window.innerHeight,
       width: window.innerWidth,
     });
-  });
+  }, []);
 
   useEffect(() => {
-    if (index == words.length - 1) return;
+    if (index === words.length - 1) return;
     timeoutRef.current = setTimeout(
       () => {
         setIndex((index) => index + 1);
       },
-      index == 0 ? 1500 : 130
+      index === 0 ? 1500 : 120
     );
 
     return () => clearInterval(timeoutRef.current);
