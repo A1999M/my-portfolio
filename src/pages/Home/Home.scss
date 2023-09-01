@@ -1,0 +1,591 @@
+.homePage {
+  position: relative;
+  // normal hero header styles
+  .maskLayer {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    mask-size: 60px;
+    mask-image: url(../../assets/svg/mask.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../../assets/svg/mask.svg);
+    -webkit-mask-size: 60px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-origin: content-box;
+    background-color: #ec4e39;
+    mix-blend-mode: normal;
+    pointer-events: none;
+    p {
+      color: #000000 !important;
+    }
+    z-index: 5;
+  }
+  .heroHeader {
+    padding: 0;
+    background-image: url(../../assets/image/mainDarkMan.png);
+    background-size: 42%;
+    background-position-y: 5%;
+    background-position-x: 108%;
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    will-change: transform;
+    .wrapperName {
+      div {
+        overflow: hidden;
+      }
+      .NameOfMe {
+        font-size: 10.2vw;
+        margin-top: 10%;
+        font-weight: bold;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 0px;
+        margin-left: 5%;
+        font-style: italic;
+        color: #e3e3e3;
+        line-height: 9rem;
+        will-change: transform;
+      }
+      .lastNameOfMe {
+        @extend .NameOfMe;
+        margin-top: 0px;
+      }
+      .descHeroHeader {
+        font-size: 17px;
+        margin-top: 25px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        width: 35%;
+        line-height: 24px;
+        margin-left: 6%;
+        will-change: transform;
+      }
+    }
+    .wrapperHeroHeader {
+      background-image: url(../../assets/image/darkMan20.png);
+      background-size: 222%;
+      background-position-x: -60rem;
+      background-position-y: 0rem;
+      font-family: "Raleway", sans-serif;
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+    }
+  }
+  // mask hero header styles
+  .maskHeroHeader {
+    padding: 0;
+    .wrapperName {
+      .NameOfMe {
+        text-transform: capitalize;
+        font-size: 10vw;
+        margin-top: 22%;
+        font-weight: bold;
+        margin-left: 15%;
+        color: #000;
+        width: fit-content;
+      }
+      .lastNameOfMe {
+        @extend .NameOfMe;
+        margin-top: 0px;
+        margin-left: 12%;
+      }
+      .descHeroHeader {
+        text-transform: capitalize;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #000;
+        width: 65%;
+        line-height: 30px;
+        margin-left: 16%;
+      }
+    }
+    .wrapperHeroHeader {
+      background-image: url(../../assets/image/darkMan20.png);
+      background-size: 200%;
+      background-position-x: -60rem;
+      background-position-y: -3rem;
+      font-family: "Raleway", sans-serif;
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+    }
+  }
+
+  //
+
+  // about section styles
+  .aboutSection {
+    margin-top: 8rem;
+    overflow: hidden;
+    .wrapperAboutSection {
+      width: 85%;
+      margin-left: 5%;
+      div {
+        overflow: hidden;
+        .titleAbout {
+          word-spacing: 4px;
+          font-kerning: none;
+          font-size: 21px;
+          font-family: "Raleway", sans-serif;
+          color: #b7ab98;
+          text-transform: uppercase;
+          line-height: 25px;
+        }
+      }
+
+      .descAbout {
+        font-kerning: none;
+        font-size: 70px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        font-weight: 700;
+        line-height: 65px;
+        margin-top: 1.5rem;
+        text-align: start;
+        span {
+          color: #ec4e39;
+        }
+      }
+    }
+  }
+
+  //
+
+  // my skills section styles
+  .mySkills {
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 10rem;
+    overflow: hidden;
+    .titleSkills {
+      font-kerning: none;
+      word-spacing: 4px;
+      font-size: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      text-transform: uppercase;
+      line-height: 25px;
+    }
+  }
+  .mySkillsLogo {
+    .wrapperLogos {
+      margin-top: 1rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      .logoCuomn1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logoCuomn2 {
+        @extend .logoCuomn1;
+      }
+      .logoCuomn3 {
+        @extend .logoCuomn2;
+      }
+      .logoCuomn1,
+      .logoCuomn2,
+      .logoCuomn3 {
+        .wrapperImageLogo {
+          margin: 3rem 4rem;
+          img {
+            display: inline-block;
+            width: 115%;
+            will-change: transform;
+            mix-blend-mode: multiply;
+          }
+        }
+      }
+    }
+  }
+
+  //
+
+  // what i do section styles
+  .wrapperWhatIdo {
+    margin-top: 10rem;
+    margin-left: 5%;
+    width: 82%;
+    .wrapperTitleWhatIdo {
+      overflow: hidden;
+      .titleWhatIdo {
+        word-spacing: 4px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+        line-height: 25px;
+      }
+    }
+    .textWhatIDo {
+      font-kerning: none;
+      font-size: 70px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      font-weight: 700;
+      line-height: 85px;
+      margin-top: 1.5rem;
+      text-align: start;
+      span {
+        color: #ec4e39;
+      }
+    }
+  }
+
+  //
+
+  // demo works section styles
+  .wrapperDemoWorksTitle {
+    width: 100%;
+    margin-top: 10rem;
+    overflow: hidden;
+    .titleDemo {
+      margin-left: 5%;
+      word-spacing: 4px;
+      font-kerning: none;
+      font-size: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      text-transform: uppercase;
+    }
+  }
+  .wrapperDemoWorksVideo {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  //
+
+  // my projects section styles
+  .myProjects {
+    margin-top: 10rem;
+    margin-left: 5%;
+    width: 85%;
+    .wrapperTitleProjects {
+      overflow: hidden;
+      .titleProject {
+        word-spacing: 4px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+      }
+    }
+    .wrapperProjects {
+      list-style: none;
+      margin-top: 3rem;
+      .eachProject {
+        border-top: 1px solid #b7ab9899;
+        padding: 3.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &:last-child {
+          border-bottom: 1px solid #b7ab9899;
+        }
+        .nameOfProject {
+          transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+          font-size: 32px;
+          line-height: 45px;
+          color: #b7ab98;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        .myTask {
+          transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+          font-size: 18px;
+          color: #b7ab98;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+        .proImage {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35%;
+          transform: translateX(-50%) translateY(-50%);
+          opacity: 0;
+          clip-path: inset(0% 100% 0% 100%);
+          transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+          pointer-events: none;
+        }
+        &:hover {
+          .nameOfProject {
+            transform: translateX(-40px);
+            color: #d4ccbd;
+          }
+          .myTask {
+            transform: translateX(40px);
+            color: #d4ccbd;
+          }
+          .proImage {
+            clip-path: inset(0% 0% 0% 0%);
+            opacity: 1;
+            transform: translateX(-50%) translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  //
+
+  // my Experience section styles
+  .wrapperExperience {
+    margin-left: 5%;
+    width: 85%;
+    margin-top: 15rem;
+    .wrapperTitleExperience {
+      overflow: hidden;
+      .titleExperience {
+        word-spacing: 4px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+      }
+    }
+    .wrapperDescExperience {
+      .descExperience {
+        font-size: 55px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        font-weight: 900;
+        line-height: 75px;
+        margin-top: 1.5rem;
+        text-align: start;
+        font-kerning: none;
+        span {
+          color: #ec4e39;
+        }
+      }
+    }
+  }
+
+  // how to help section styles
+  .wrapperHowToHelp {
+    margin-left: 5%;
+    width: 85%;
+    margin-top: 15rem;
+    .wrapperTitleHelp {
+      overflow: hidden;
+      .titleHelp {
+        word-spacing: 3px;
+        font-kerning: none;
+        font-size: 21px;
+        font-family: "Raleway", sans-serif;
+        color: #b7ab98;
+        text-transform: uppercase;
+      }
+    }
+    .descHowHelp {
+      font-size: 70px;
+      font-family: "Raleway", sans-serif;
+      color: #b7ab98;
+      font-weight: 700;
+      line-height: 83px;
+      margin-top: 1.5rem;
+      text-align: start;
+      font-kerning: none;
+      span {
+        color: #ec4e39;
+      }
+    }
+  }
+
+  //
+
+  // contact me section styles
+  .wrapperContactMe {
+    margin-left: 5%;
+    margin-top: 8rem;
+    width: 85%;
+    .contactMeForm {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .wrapperLabelMessage {
+        overflow: hidden;
+        .messageLabel {
+          font-size: 24px;
+          color: #e3e3e3;
+          margin-top: 5rem;
+          margin-bottom: 1rem;
+          text-transform: capitalize;
+        }
+      }
+      #msgInput {
+        width: 100%;
+        line-height: 35px;
+        resize: none;
+        font-size: 20px;
+        color: #b7ab98;
+        border: 0;
+        // border-bottom: 1px solid #b7ab987c;
+        text-transform: capitalize;
+        padding: 13px 0;
+        display: block;
+        outline: none;
+        background-color: transparent;
+        &::placeholder {
+          font-size: 20px;
+          color: #b7ab98;
+          text-transform: capitalize;
+        }
+      }
+      .sendMeBtn {
+        border: 0;
+        outline: 0;
+        background-color: #fff;
+        color: #000;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-top: 3rem;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+        span {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 140px;
+        }
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #455ce9;
+          content: "";
+          z-index: -1;
+          clip-path: circle(0% at 50% 150%);
+          transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        &:hover {
+          color: #fff;
+          &::after {
+            clip-path: circle(110% at 50% 100%);
+          }
+        }
+      }
+      .wrapperFormInput {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 6%;
+        overflow: hidden;
+        width: 47%;
+        .wrapperLabel {
+          overflow: hidden;
+          label {
+            font-size: 24px;
+            color: #e3e3e3;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+          }
+        }
+
+        input {
+          font-size: 20px;
+          color: #b7ab98;
+          border: 0;
+          border-bottom: 1px solid #b7ab987c;
+          text-transform: capitalize;
+          padding: 13px 0;
+          padding-left: 5px;
+          outline: none;
+          background-color: transparent;
+          width: 100%;
+          &::placeholder {
+            font-size: 20px;
+            color: #b7ab98;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .emailInput {
+        margin-right: 0;
+      }
+      .orgInput {
+        width: 100%;
+        margin-right: 0;
+      }
+      .msgInput {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  // what i do2 section styles
+  .WhatIDo2 {
+    margin-top: 12rem;
+    // coding
+    .wrapperWhatIDo2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 5%;
+      border: 1px solid #b7ab9852;
+      border-left: 0;
+      border-right: 0;
+      .titleWID {
+        font-family: "Raleway", sans-serif;
+        font-size: 7.5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-style: italic;
+        color: #b7ab98;
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100dvw;
+          height: 100%;
+          background-color: #ec4e39;
+          clip-path: inset(100% 0% 100% 0%);
+          z-index: -1;
+          content: "";
+          transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        &:hover {
+          color: #000;
+          &::after {
+            clip-path: inset(0% 0% 0% 0%);
+          }
+        }
+      }
+      .descWID {
+        font-weight: 600;
+        width: 35%;
+        line-height: 27px;
+        text-transform: capitalize;
+        font-family: "Raleway", sans-serif;
+        color: #000;
+      }
+    }
+  }
+}
