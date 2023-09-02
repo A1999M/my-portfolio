@@ -11,18 +11,18 @@
       .wrapperName {
         .NameOfMe {
           text-align: center;
-          font-size: 90px;
+          font-size: 85px;
           margin-top: 43%;
           letter-spacing: 0px;
           margin-left: 3%;
-          line-height: 5rem;
+          line-height: 4rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 90px;
+          font-size: 80px;
           letter-spacing: 0px;
-          margin-left: 3%;
-          line-height: 5rem;
+          margin-left: 5%;
+          line-height: 4rem;
           margin-top: 0px;
         }
         .descHeroHeader {
@@ -30,7 +30,7 @@
           margin-top: 30px;
           width: 80%;
           line-height: 15px;
-          margin-left: auto;
+          margin-left: 3rem;
           margin-right: auto;
           text-align: center;
         }
@@ -74,18 +74,18 @@
       .wrapperName {
         .NameOfMe {
           text-align: center;
-          font-size: 93px;
+          font-size: 85px;
           margin-top: 43%;
           letter-spacing: 0px;
           margin-left: 3%;
-          line-height: 5rem;
+          line-height: 4rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 93px;
+          font-size: 80px;
           letter-spacing: 0px;
-          margin-left: 3%;
-          line-height: 5rem;
+          margin-left: 5%;
+          line-height: 4rem;
           margin-top: 0px;
         }
         .descHeroHeader {
@@ -93,7 +93,7 @@
           margin-top: 30px;
           width: 80%;
           line-height: 15px;
-          margin-left: auto;
+          margin-left: 3rem;
           margin-right: auto;
           text-align: center;
         }
@@ -122,6 +122,30 @@
         }
       }
     }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 4px 0px;
+          a {
+            font-size: 12px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 375px) {
@@ -137,18 +161,18 @@
       .wrapperName {
         .NameOfMe {
           text-align: center;
-          font-size: 95px;
+          font-size: 90px;
           margin-top: 43%;
           letter-spacing: 0px;
           margin-left: 3%;
-          line-height: 5rem;
+          line-height: 4.5rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 95px;
+          font-size: 85px;
           letter-spacing: 0px;
-          margin-left: 3%;
-          line-height: 5rem;
+          margin-left: 6%;
+          line-height: 4.5rem;
           margin-top: 0px;
         }
         .descHeroHeader {
@@ -156,7 +180,7 @@
           margin-top: 30px;
           width: 80%;
           line-height: 15px;
-          margin-left: auto;
+          margin-left: 3rem;
           margin-right: auto;
           text-align: center;
         }
@@ -208,9 +232,9 @@
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 100px;
+          font-size: 90px;
           letter-spacing: 0px;
-          margin-left: 3%;
+          margin-left: 5%;
           line-height: 5rem;
           margin-top: 0px;
         }
@@ -219,7 +243,7 @@
           margin-top: 30px;
           width: 75%;
           line-height: 15px;
-          margin-left: auto;
+          margin-left: 4rem;
           margin-right: auto;
           text-align: center;
         }
@@ -244,6 +268,30 @@
             left: 50%;
             height: 5px;
             width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 14px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
           }
         }
       }
@@ -263,17 +311,17 @@
       .wrapperName {
         .NameOfMe {
           text-align: center;
-          font-size: 100px;
+          font-size: 95px;
           margin-top: 43%;
           letter-spacing: 0px;
-          margin-left: 3%;
+          margin-left: 10%;
           line-height: 5rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 100px;
+          font-size: 90px;
           letter-spacing: 0px;
-          margin-left: 3%;
+          margin-left: 10%;
           line-height: 5rem;
           margin-top: 0px;
         }
@@ -282,7 +330,7 @@
           margin-top: 30px;
           width: 70%;
           line-height: 15px;
-          margin-left: auto;
+          margin-left: 5rem;
           margin-right: auto;
           text-align: center;
         }
@@ -311,6 +359,47 @@
         }
       }
     }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 14px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 540px) {
+  .homePage {
+    .heroHeader {
+      .wrapperName {
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 15px;
+          margin-left: 7rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
   }
 }
 @media (min-width: 576px) {
@@ -319,25 +408,25 @@
     .heroHeader {
       background-image: url(../../assets/image/mainDarkMan.png);
       background-size: 85%;
-      background-position-y: 5%;
+      background-position-y: 10%;
       background-position-x: 120%;
       width: 100%;
-      height: 100vh;
+      height: 110vh;
       .wrapperName {
         .NameOfMe {
           text-align: center;
-          font-size: 150px;
+          font-size: 130px;
           margin-top: 29%;
           letter-spacing: 0px;
-          margin-left: 3%;
-          line-height: 7.5rem;
+          margin-left: 10%;
+          line-height: 7rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 150px;
+          font-size: 130px;
           letter-spacing: 0px;
-          margin-left: 3%;
-          line-height: 7.5rem;
+          margin-left: 10%;
+          line-height: 7rem;
           margin-top: 0px;
         }
         .descHeroHeader {
@@ -345,7 +434,7 @@
           margin-top: 30px;
           width: 70%;
           line-height: 17px;
-          margin-left: auto;
+          margin-left: 7.5rem;
           margin-right: auto;
           text-align: center;
         }
@@ -370,6 +459,30 @@
             left: 50%;
             height: 5px;
             width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 7px 0px;
+          a {
+            font-size: 14px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
           }
         }
       }
@@ -407,7 +520,7 @@
           text-align: inherit;
           font-size: 13px;
           margin-top: 30px;
-          width: 65%;
+          width: 70%;
           line-height: 17px;
           margin-left: 4%;
         }
@@ -432,6 +545,30 @@
             left: 50%;
             height: 5px;
             width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 7px 0px;
+          a {
+            font-size: 15px;
+            padding-left: 15px;
+            &::after {
+              left: 0px;
+              width: 6px;
+              height: 6px;
+            }
           }
         }
       }
@@ -495,6 +632,30 @@
         }
       }
     }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: flex-start;
+        .rightSideItems {
+          padding: 6px 0px;
+          a {
+            font-size: 15px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 7px;
+              height: 7px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
@@ -554,6 +715,29 @@
         }
       }
     }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0;
+        .rightSideItems {
+          padding: 8px 0px;
+          a {
+            font-size: 16px;
+            padding-left: 15px;
+            &::after {
+              left: 0px;
+              width: 8px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -609,6 +793,29 @@
             left: 50%;
             height: 6px;
             width: 6px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0;
+        .rightSideItems {
+          padding: 8px 0px;
+          a {
+            font-size: 16px;
+            padding-left: 15px;
+            &::after {
+              left: 0px;
+              width: 8px;
+              height: 8px;
+            }
           }
         }
       }
