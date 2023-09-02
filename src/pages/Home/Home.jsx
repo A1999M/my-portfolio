@@ -50,10 +50,10 @@ export default function Home() {
         {/* normal content  */}
         <div className="row darkLayer p-0">
           <Navbar mask={false} visibility="visible" />
-          <div className="col-1">
+          <div className="col-1 d-none d-md-block">
             <Sidebar changeMix={setMixStatus} mask={false} />
           </div>
-          <div className="col-10">
+          <div className="col-11 col-md-10">
             <HeroHeader
               mask={false}
               color={"#e3e3e3"}
@@ -101,10 +101,10 @@ export default function Home() {
           transition={{ type: "tween", duration: 0.5, ease: "backOut" }}
         >
           <Navbar mask={true} visibility="hidden" />
-          <div className="col-1">
+          <div className="col-1 d-none d-md-block">
             <Sidebar changeMix={setMixStatus} mask={true} />
           </div>
-          <div className="col-10">
+          <div className="col-11 col-md-10">
             <HeroHeader
               mask={true}
               color={"#000"}

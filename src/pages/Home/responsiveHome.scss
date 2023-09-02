@@ -1,0 +1,617 @@
+@media (max-width: 360px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 120vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 90px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 90px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 80%;
+          line-height: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 14px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 120vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 93px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 93px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 80%;
+          line-height: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 14px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 120vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 95px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 95px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 80%;
+          line-height: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 15px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 393px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 120vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 100px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 100px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 75%;
+          line-height: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 17px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 412px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 120vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 100px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 100px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 17px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 85%;
+      background-position-y: 5%;
+      background-position-x: 120%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 150px;
+          margin-top: 29%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7.5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 150px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 13px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 17px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 18px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 65%;
+      background-position-y: 0%;
+      background-position-x: 140%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: inherit;
+          font-size: 130px;
+          margin-top: 26%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7rem;
+        }
+        .lastNameOfMe {
+          text-align: inherit;
+          font-size: 130px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          text-align: inherit;
+          font-size: 13px;
+          margin-top: 30px;
+          width: 65%;
+          line-height: 17px;
+          margin-left: 4%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 18px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 48%;
+      background-position-y: 3%;
+      background-position-x: 115%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 145px;
+          margin-top: 17%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 7.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 145px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 7.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 55%;
+          line-height: 20px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 19px;
+          &::after {
+            top: 34px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 48%;
+      background-position-y: 3%;
+      background-position-x: 110%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 165px;
+          margin-top: 15%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 8.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 165px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 8.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 15px;
+          margin-top: 30px;
+          width: 46%;
+          line-height: 20px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 19px;
+          &::after {
+            top: 35px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 42%;
+      background-position-y: 5%;
+      background-position-x: 110%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 172px;
+          margin-top: 10%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 9rem;
+        }
+        .lastNameOfMe {
+          font-size: 172px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 9rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 16px;
+          margin-top: 25px;
+          width: 42%;
+          line-height: 22px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 23px;
+          &::after {
+            top: 38px;
+            left: 50%;
+            height: 6px;
+            width: 6px;
+          }
+        }
+      }
+    }
+  }
+}

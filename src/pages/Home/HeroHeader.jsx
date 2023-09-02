@@ -66,12 +66,9 @@ let HeroHeader = memo(
     return (
       <div
         ref={scopeRef}
+        data-mask={mask}
         className="container-fluid heroHeader"
-        style={
-          mask
-            ? { backgroundColor: "#ec4e39" }
-            : { borderBlockColor: "#ec4e39" }
-        }
+        style={{ borderBlockColor: "#ec4e39" }}
       >
         <div className="row p-0">
           <div className="col-12">
