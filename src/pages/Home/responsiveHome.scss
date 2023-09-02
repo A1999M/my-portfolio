@@ -129,6 +129,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 1.5rem;
+            img {
+              width: 140%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 360px) {
@@ -259,6 +292,39 @@
           font-size: 0px;
           line-height: 20px;
           text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 195%;
+            }
+          }
         }
       }
     }
@@ -395,6 +461,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 175%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 393px) {
@@ -528,6 +627,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 175%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 412px) {
@@ -658,6 +790,39 @@
           font-size: 0px;
           line-height: 20px;
           text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -811,6 +976,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 7rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 768px) {
@@ -943,6 +1141,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 19px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 1.5rem 2rem;
+            img {
+              width: 127%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 992px) {
@@ -1069,6 +1300,39 @@
           font-size: 13px;
           line-height: 22px;
           text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 3rem;
+            img {
+              width: 120%;
+            }
+          }
         }
       }
     }
@@ -1199,6 +1463,39 @@
         }
       }
     }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 3.5rem;
+            img {
+              width: 125%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -1322,6 +1619,39 @@
           width: 35%;
           line-height: 27px;
           text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 3rem 4rem;
+            img {
+              width: 115%;
+            }
+          }
         }
       }
     }
