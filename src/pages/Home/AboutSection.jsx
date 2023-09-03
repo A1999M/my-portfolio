@@ -88,8 +88,9 @@ let AboutSection = memo(
                 className="descAbout"
               >
                 I'm a Front End Developer With 3 Years Of Experience. My Focus
-                is On <span style={{ color: spanColor }}>Web Animations</span>{" "}
-                About Creating User Friendly and Beautiful Digital Experience.
+                is On <span style={{ color: spanColor }}>Web</span>{" "}
+                <span style={{ color: spanColor }}>Animations</span> About
+                Creating User Friendly and Beautiful Digital Experience.
               </p>
             ) : (
               <p
