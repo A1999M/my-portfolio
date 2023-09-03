@@ -198,6 +198,55 @@
         width: 100vw !important;
       }
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 5rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 1.3rem;
+        .eachProject {
+          padding: 0.7rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .myTask {
+            font-size: 11px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 360px) {
@@ -398,6 +447,55 @@
       margin-top: 2.3rem;
       video {
         width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 5rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 1.3rem;
+        .eachProject {
+          padding: 0.7rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .myTask {
+            font-size: 11px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
       }
     }
   }
@@ -602,6 +700,55 @@
         width: 100vw !important;
       }
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 393px) {
@@ -804,6 +951,55 @@
         width: 100vw !important;
       }
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 412px) {
@@ -1004,6 +1200,55 @@
       margin-top: 2.5rem;
       video {
         width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
       }
     }
   }
@@ -1225,6 +1470,55 @@
         width: 100vw !important;
       }
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 14px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 2rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 19px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 15px;
+            margin-top: 10px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-20px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(20px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 768px) {
@@ -1426,6 +1720,54 @@
         width: 100% !important;
       }
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 16px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 1.7rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          .nameOfProject {
+            font-size: 18px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 0;
+          }
+          .proImage {
+            width: 30%;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-40px);
+              color: #d4ccbd;
+            }
+            .myTask {
+              transform: translateX(40px);
+              color: #d4ccbd;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 992px) {
@@ -1620,6 +1962,38 @@
       width: 100%;
       margin-top: 3rem;
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 95%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 19px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 23px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 16px;
+          }
+          .proImage {
+            width: 32%;
+            visibility: visible;
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
@@ -1813,6 +2187,37 @@
       width: 100%;
       margin-top: 3rem;
     }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 90%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 21px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 28px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 17px;
+          }
+          .proImage {
+            width: 34%;
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -1972,7 +2377,6 @@
         }
       }
     }
-
     // what I do section responsive
     .wrapperWhatIdo {
       margin-top: 10rem;
@@ -2005,6 +2409,37 @@
     .wrapperDemoWorksVideo {
       width: 100%;
       margin-top: 3rem;
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 85%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 21px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 32px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 18px;
+          }
+          .proImage {
+            width: 35%;
+          }
+        }
+      }
     }
   }
 }
