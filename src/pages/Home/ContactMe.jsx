@@ -10,6 +10,30 @@ import emailjs from "@emailjs/browser";
 import SplitType from "split-type";
 import { gsap } from "gsap";
 
+let inputArray = [
+  {
+    id: "nameInput",
+    type: "text",
+    name: "user_name",
+    label: "What's your name?",
+    placeholder: "John Doe",
+  },
+  {
+    id: "emailInput",
+    type: "email",
+    name: "user_email",
+    label: "What's your email?",
+    placeholder: "John@Doe.com",
+  },
+  {
+    id: "orgInput",
+    type: "text",
+    name: "org_name",
+    label: "What's the name of your organization?",
+    placeholder: "John & Doe ®",
+  },
+];
+
 export default function ContactMe({ mask }) {
   let [statusMsg, setStatusMsg] = useState(true);
   let [showModal, setShowModal] = useState(false);
@@ -156,27 +180,17 @@ export default function ContactMe({ mask }) {
       >
         <div className="wrapperContactMe">
           <form ref={formRef} onSubmit={sendEmail} className="contactMeForm">
-            <FormInput
-              id="nameInput"
-              type="text"
-              name="user_name"
-              label="What's your name?"
-              placeholder="John Doe"
-            />
-            <FormInput
-              id="emailInput"
-              type="email"
-              name="user_email"
-              label="What's your email?"
-              placeholder="John@Doe.com"
-            />
-            <FormInput
-              id="orgInput"
-              type="text"
-              name="org_name"
-              label="What's the name of your organization?"
-              placeholder="John & Doe ®"
-            />
+            {inputArray.map((input) => {
+              return (
+                <FormInput
+                  id={input.id}
+                  type={input.type}
+                  name={input.name}
+                  label={input.label}
+                  placeholder={input.placeholder}
+                />
+              );
+            })}
             <div className="wrapperLabelMessage">
               <label
                 ref={messageLabelRef}

@@ -264,6 +264,71 @@
         margin-top: 1.5rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+              line-height: 24px;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 360px) {
@@ -530,6 +595,71 @@
         font-size: 34px;
         line-height: 46px;
         margin-top: 1.6rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+              line-height: 24px;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
       }
     }
   }
@@ -800,6 +930,70 @@
         margin-top: 1.6rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 393px) {
@@ -1068,6 +1262,70 @@
         margin-top: 2rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 412px) {
@@ -1334,6 +1592,81 @@
         font-size: 42px;
         line-height: 55px;
         margin-top: 2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 13px;
+            margin-top: 2rem;
+            margin-bottom: 0.2rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 13px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 13px;
+              margin-top: 2rem;
+              margin-bottom: 0.2rem;
+            }
+          }
+
+          input {
+            font-size: 13px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 12px;
+            }
+          }
+        }
+        .emailInput {
+          margin-right: 0;
+        }
+        .orgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+        .msgInput {
+          width: 100%;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -1621,6 +1954,70 @@
         margin-top: 2rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 90%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 15px;
+            margin-top: 2.5rem;
+            margin-bottom: 0.3rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 15px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 15px;
+              margin-top: 2.5rem;
+              margin-bottom: 0.3rem;
+            }
+          }
+
+          input {
+            font-size: 15px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 768px) {
@@ -1887,6 +2284,70 @@
         margin-top: 1.5rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 90%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 17px;
+            margin-top: 4.5rem;
+            margin-bottom: 0.6rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 16px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 15px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 17px;
+              margin-top: 4.5rem;
+              margin-bottom: 0.6rem;
+            }
+          }
+
+          input {
+            font-size: 16px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 992px) {
@@ -2130,6 +2591,70 @@
         margin-top: 2.2rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 19px;
+            margin-top: 4.5rem;
+            margin-bottom: 0.6rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 18px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 16px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 19px;
+              margin-top: 4.5rem;
+              margin-bottom: 0.6rem;
+            }
+          }
+
+          input {
+            font-size: 18px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
@@ -2371,6 +2896,70 @@
         margin-top: 2rem;
       }
     }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 21px;
+            margin-top: 4.5rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 20px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 18px;
+          }
+        }
+        .sendMeBtn {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          margin-top: 2rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 21px;
+            line-height: 130px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 21px;
+              margin-top: 4.5rem;
+              margin-bottom: 0.8rem;
+            }
+          }
+
+          input {
+            font-size: 20px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -2609,6 +3198,70 @@
         font-size: 70px;
         line-height: 83px;
         margin-top: 1.5rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 24px;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 20px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 20px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 24px;
+              margin-top: 5rem;
+              margin-bottom: 1rem;
+            }
+          }
+
+          input {
+            font-size: 20px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 20px;
+            }
+          }
+        }
       }
     }
   }
