@@ -20,15 +20,14 @@
     p {
       color: #000000 !important;
     }
-    z-index: 5;
+    z-index: 10000;
   }
   .heroHeader {
     padding: 0;
-    background-image: url(../../assets/image/mainDarkMan.png);
     background-size: 42%;
     background-position-y: 5%;
     background-position-x: 108%;
-    background-blend-mode: difference;
+    // background-blend-mode: difference;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -64,59 +63,13 @@
         will-change: transform;
       }
     }
-    .wrapperHeroHeader {
-      background-image: url(../../assets/image/darkMan20.png);
-      background-size: 222%;
-      background-position-x: -60rem;
-      background-position-y: 0rem;
-      font-family: "Raleway", sans-serif;
-      width: 100%;
-      height: 100vh;
-      background-repeat: no-repeat;
-    }
   }
-  // mask hero header styles
-  .maskHeroHeader {
-    padding: 0;
-    .wrapperName {
-      .NameOfMe {
-        text-transform: capitalize;
-        font-size: 10vw;
-        margin-top: 22%;
-        font-weight: bold;
-        margin-left: 15%;
-        color: #000;
-        width: fit-content;
-      }
-      .lastNameOfMe {
-        @extend .NameOfMe;
-        margin-top: 0px;
-        margin-left: 12%;
-      }
-      .descHeroHeader {
-        text-transform: capitalize;
-        font-size: 18px;
-        margin-top: 20px;
-        color: #000;
-        width: 65%;
-        line-height: 30px;
-        margin-left: 16%;
-      }
-    }
-    .wrapperHeroHeader {
-      background-image: url(../../assets/image/darkMan20.png);
-      background-size: 200%;
-      background-position-x: -60rem;
-      background-position-y: -3rem;
-      font-family: "Raleway", sans-serif;
-      width: 100%;
-      height: 100vh;
-      background-repeat: no-repeat;
-    }
+  .heroHeader[data-mask="false"] {
+    background-image: url(../../assets/image/mainDarkMan.png);
   }
-
-  //
-
+  .heroHeader[data-mask="true"] {
+    background-image: none;
+  }
   // about section styles
   .aboutSection {
     margin-top: 8rem;
@@ -152,9 +105,6 @@
       }
     }
   }
-
-  //
-
   // my skills section styles
   .mySkills {
     width: 85%;
@@ -205,9 +155,6 @@
       }
     }
   }
-
-  //
-
   // what i do section styles
   .wrapperWhatIdo {
     margin-top: 10rem;
@@ -239,9 +186,6 @@
       }
     }
   }
-
-  //
-
   // demo works section styles
   .wrapperDemoWorksTitle {
     width: 100%;
@@ -261,9 +205,6 @@
     width: 100%;
     margin-top: 3rem;
   }
-
-  //
-
   // my projects section styles
   .myProjects {
     margin-top: 10rem;
@@ -337,9 +278,6 @@
       }
     }
   }
-
-  //
-
   // my Experience section styles
   .wrapperExperience {
     margin-left: 5%;
@@ -372,7 +310,6 @@
       }
     }
   }
-
   // how to help section styles
   .wrapperHowToHelp {
     margin-left: 5%;
@@ -403,9 +340,6 @@
       }
     }
   }
-
-  //
-
   // contact me section styles
   .wrapperContactMe {
     margin-left: 5%;
@@ -537,7 +471,6 @@
       }
     }
   }
-
   // what i do2 section styles
   .WhatIDo2 {
     margin-top: 12rem;

@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
@@ -8,6 +8,18 @@ export default function DemoWorks({ mask }) {
   let scopeRef = useRef(null);
   let titleRef = useRef(null);
   let demoWorksVideo = useRef(null);
+  let [size, setSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    let handleResize = () => {
+      setSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [size]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -30,16 +42,19 @@ export default function DemoWorks({ mask }) {
         },
       });
 
-      gsap.from(demoWorksVideo.current, {
-        clipPath: "inset(0% 100% 0% 100%)",
-        ease: "none",
-        scrollTrigger: {
-          trigger: demoWorksVideo.current,
-          start: "top 100%",
-          end: "center 67%",
-          scrub: 1,
-        },
-      });
+      if (size > 768) {
+        gsap.from(demoWorksVideo.current, {
+          clipPath:
+            size > 768 ? "inset(0% 100% 0% 100%)" : "inset(0% 100% 0% 0%)",
+          ease: "none",
+          scrollTrigger: {
+            trigger: demoWorksVideo.current,
+            start: size > 992 ? "top 100%" : "top 120%",
+            end: "center 67%",
+            scrub: 1,
+          },
+        });
+      }
     }, scopeRef.current);
 
     return () => {

@@ -50,10 +50,10 @@ export default function Home() {
         {/* normal content  */}
         <div className="row darkLayer p-0">
           <Navbar mask={false} visibility="visible" />
-          <div className="col-1">
+          <div className="col-1 d-none d-md-block">
             <Sidebar changeMix={setMixStatus} mask={false} />
           </div>
-          <div className="col-10">
+          <div className="col-10 col-md-9 col-lg-10">
             <HeroHeader
               mask={false}
               color={"#e3e3e3"}
@@ -86,7 +86,7 @@ export default function Home() {
             />
             <ContactMe mask={false} />
           </div>
-          <div className="col-1">
+          <div className="col-2 col-lg-1 ps-0">
             <RightSidebar positionY={yPos} />
           </div>
         </div>
@@ -101,10 +101,10 @@ export default function Home() {
           transition={{ type: "tween", duration: 0.5, ease: "backOut" }}
         >
           <Navbar mask={true} visibility="hidden" />
-          <div className="col-1">
+          <div className="col-1 d-none d-md-block">
             <Sidebar changeMix={setMixStatus} mask={true} />
           </div>
-          <div className="col-10">
+          <div className="col-10 col-md-9 col-lg-10">
             <HeroHeader
               mask={true}
               color={"#000"}
@@ -136,7 +136,7 @@ export default function Home() {
             />
             <ContactMe mask={true} />
           </div>
-          <div className="col-1">
+          <div className="col-2 col-lg-1 ps-0">
             <RightSidebar positionY={yPos} />
           </div>
         </motion.div>

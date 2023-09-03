@@ -1,4 +1,4 @@
-import { useRef, useEffect, memo } from "react";
+import { useRef, useEffect, memo, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
@@ -9,8 +9,20 @@ let AboutSection = memo(
   ({ changeMix, changeHover, mask, color, spanColor }) => {
     let descAboutSectionRef = useRef(null);
     let triggerDesc = useRef(null);
+    let [size, setSize] = useState(window.innerWidth);
     let scopeRef = useRef(null);
     let titleRef = useRef(null);
+
+    useEffect(() => {
+      let handleResize = () => {
+        setSize(window.innerWidth);
+      };
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, [size]);
 
     useEffect(() => {
       gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -39,7 +51,10 @@ let AboutSection = memo(
           scrollTrigger: {
             trigger: triggerDesc.current,
             endTrigger: scopeRef.current,
-            start: "center 85%",
+            start:
+              (size > 1200 && "center 85%") ||
+              (size > 768 && "top 65%") ||
+              (size < 768 && "top 75%"),
             end: "center 50%",
             scrub: 1,
           },
@@ -73,8 +88,9 @@ let AboutSection = memo(
                 className="descAbout"
               >
                 I'm a Front End Developer With 3 Years Of Experience. My Focus
-                is On <span style={{ color: spanColor }}> Web Animations </span>
-                About Creating User Friendly and Beautiful Digital Experience.
+                is On <span style={{ color: spanColor }}>Web</span>{" "}
+                <span style={{ color: spanColor }}>Animations</span> About
+                Creating User Friendly and Beautiful Digital Experience.
               </p>
             ) : (
               <p
@@ -90,8 +106,8 @@ let AboutSection = memo(
                 ref={descAboutSectionRef}
                 className="descAbout"
               >
-                I'm Currently Learning
-                <span style={{ color: spanColor }}> Next.js</span>, And I Have a
+                I'm Currently Learning{" "}
+                <span style={{ color: spanColor }}>Next.js</span> , And I Have a
                 Strong Interest In 3D Websites. As a Result, I Allocate a Amount
                 Of My Time To Learning 3D Libraries.
               </p>

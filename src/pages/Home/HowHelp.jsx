@@ -35,8 +35,8 @@ export default function HowHelp({ mask, changeMix, changeHover }) {
         scrollTrigger: {
           scrub: 1,
           trigger: descRef.current,
-          start: "center 75%",
-          end: "bottom 65%",
+          start: "center 93%",
+          end: "bottom 70%",
         },
       });
     }, scopeRef.current);
@@ -86,8 +86,10 @@ export default function HowHelp({ mask, changeMix, changeHover }) {
               ref={descRef}
               className="descHowHelp"
             >
-              I'm Currently Looking For A Job In <span>Full Time Remote </span>.
-              Feel Free To Contact Me If You Want To Collaborate On Future
+              I'm Currently Looking For A Job In <span>Full </span>
+              <span>Time </span>
+              <span>Remote</span> Feel Free To Contact Me If You Want To
+              Collaborate On Future.
             </p>
           )}
         </div>

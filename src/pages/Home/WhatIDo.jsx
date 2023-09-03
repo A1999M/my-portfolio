@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
@@ -7,6 +7,19 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
   let whatIdoRef = useRef(null);
   let titleRef = useRef(null);
   let scopeRef = useRef(null);
+
+  let [size, setSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    let handleResize = () => {
+      setSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [size]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +48,7 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
         ease: "none",
         scrollTrigger: {
           trigger: titleRef.current,
-          start: "center 70%",
+          start: size > 768 ? "center 70%" : "top 55%",
           end: "center 20%",
           id: "widoDesc",
           scrub: 1.5,
@@ -74,16 +87,16 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
               className="textWhatIDo"
             >
               I Develop Websites And Web Applications, Using Animation Libraries
-              Like
-              <span style={{ color: "#ec4e39" }}> GSAP </span>
-              <span style={{ color: "#ec4e39" }}> Framer Motion </span>
-              That Makes My Applications More Interesting Than It Actually is.
+              Like <span style={{ color: "#ec4e39" }}>GSAP</span> and{" "}
+              <span style={{ color: "#ec4e39" }}>Framer</span>{" "}
+              <span style={{ color: "#ec4e39" }}>Motion</span> That Makes My
+              Applications More Interesting Than It Actually is.
             </p>
           ) : (
             <p ref={whatIdoRef} className="textWhatIDo">
               When I'm Not At The Computer, I'm Usually Hanging Out With My Two
-              Cats, Going To The Gym, Take
-              <span style={{ color: "#ffd700" }}> Nature </span>Walks With My
+              Cats, Going To The Gym, Take{" "}
+              <span style={{ color: "#ffd700" }}>Nature</span>Walks With My
               Friends. Or Read investment Books.
             </p>
           )}

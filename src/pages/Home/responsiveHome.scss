@@ -1,0 +1,3257 @@
+@media (max-width: 360px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 80px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 4rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 75px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 4rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 12px;
+          margin-top: 30px;
+          width: 85%;
+          line-height: 15px;
+          margin-left: 3rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 14px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 2%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 4px 0px;
+          a {
+            font-size: 11px;
+            padding-left: 10px;
+            &::after {
+              left: 0px;
+              width: 4px;
+              height: 4px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: -9rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 13px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 30px;
+          margin-top: 1rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 6rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 11vw;
+        }
+        .descWID {
+          width: 0%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 1.5rem;
+            img {
+              width: 140%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 4rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 13px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 6rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 1px;
+        font-size: 13px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.3rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 5rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 1.3rem;
+        .eachProject {
+          padding: 0.7rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .myTask {
+            font-size: 11px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 7rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 12px;
+        }
+      }
+      .descHowHelp {
+        font-size: 33px;
+        line-height: 45px;
+        margin-top: 1.5rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 15px;
+            line-height: 90px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+              line-height: 24px;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 85px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 4rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 80px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 4rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 12px;
+          margin-top: 30px;
+          width: 80%;
+          line-height: 13px;
+          margin-left: 3rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 14px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 4px 0px;
+          a {
+            font-size: 12px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: -9rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 13px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 30px;
+          margin-top: 1rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 6rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 11.2vw;
+        }
+        .descWID {
+          width: 0%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 195%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 4rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 13px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 30px;
+        line-height: 43px;
+        margin-top: 1.3rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 6rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 2px;
+        font-size: 13px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.3rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 5rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 1.3rem;
+        .eachProject {
+          padding: 0.7rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 13px;
+            line-height: 20px;
+          }
+          .myTask {
+            font-size: 11px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 6rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 12px;
+        }
+      }
+      .descHowHelp {
+        font-size: 34px;
+        line-height: 46px;
+        margin-top: 1.6rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 15px;
+            line-height: 100px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+              line-height: 24px;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 90px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 4.5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 85px;
+          letter-spacing: 0px;
+          margin-left: 6%;
+          line-height: 4.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 13px;
+          margin-top: 30px;
+          width: 80%;
+          line-height: 16px;
+          margin-left: 3rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 15px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 2%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 12px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: -7rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 13px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 33px;
+          margin-top: 1.3rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 6rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 11vw;
+        }
+        .descWID {
+          width: 0%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 175%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 32px;
+        line-height: 45px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 6rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 2px;
+        font-size: 14px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.3rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 8rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 13px;
+        }
+      }
+      .descHowHelp {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 1.6rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 105px;
+          height: 105px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 16px;
+            line-height: 105px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 393px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 100px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 90px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 12px;
+          margin-top: 30px;
+          width: 75%;
+          line-height: 14px;
+          margin-left: 4rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 17px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 12px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: -3rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 13px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 35px;
+          font-weight: 700;
+          line-height: 35px;
+          margin-top: 1.3rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 7rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 11.5vw;
+        }
+        .descWID {
+          width: 0%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 175%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 3rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 34px;
+        line-height: 48px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 6rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 2px;
+        font-size: 15px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.5rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 8rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 13px;
+        }
+      }
+      .descHowHelp {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 12px;
+            margin-top: 1.5rem;
+            margin-bottom: 0rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 12px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 11px;
+          }
+        }
+        .sendMeBtn {
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 17px;
+            line-height: 110px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 12px;
+              margin-top: 1.5rem;
+              margin-bottom: 0rem;
+            }
+          }
+
+          input {
+            font-size: 12px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 412px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 130%;
+      background-position-y: 0%;
+      background-position-x: 0%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 95px;
+          margin-top: 43%;
+          letter-spacing: 0px;
+          margin-left: 10%;
+          line-height: 5rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 90px;
+          letter-spacing: 0px;
+          margin-left: 10%;
+          line-height: 5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 13px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 15px;
+          margin-left: 5rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 17px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 12px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 2rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 15px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 39px;
+          margin-top: 0.7rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 7rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 11vw;
+        }
+        .descWID {
+          width: 0%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 6rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 4rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 38px;
+        line-height: 53px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 6rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 2px;
+        font-size: 15px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.5rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 13px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 2rem;
+        .eachProject {
+          padding: 1.3rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 13px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-10px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(15px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 9rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 13px;
+        }
+      }
+      .descHowHelp {
+        font-size: 42px;
+        line-height: 55px;
+        margin-top: 2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 100%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 13px;
+            margin-top: 2rem;
+            margin-bottom: 0.2rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 13px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+        .sendMeBtn {
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 17px;
+            line-height: 110px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 13px;
+              margin-top: 2rem;
+              margin-bottom: 0.2rem;
+            }
+          }
+
+          input {
+            font-size: 13px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 540px) {
+  .homePage {
+    .heroHeader {
+      .wrapperName {
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 15px;
+          margin-left: 7rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 85%;
+      background-position-y: 10%;
+      background-position-x: 120%;
+      width: 100%;
+      height: 110vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: center;
+          font-size: 130px;
+          margin-top: 29%;
+          letter-spacing: 0px;
+          margin-left: 10%;
+          line-height: 7rem;
+        }
+        .lastNameOfMe {
+          text-align: center;
+          font-size: 130px;
+          letter-spacing: 0px;
+          margin-left: 10%;
+          line-height: 7rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 13px;
+          margin-top: 30px;
+          width: 70%;
+          line-height: 17px;
+          margin-left: 7.5rem;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 18px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 5px 0px;
+          a {
+            font-size: 13px;
+            padding-left: 11px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 0rem;
+      .wrapperAboutSection {
+        width: 100%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 17px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 47px;
+          font-weight: 700;
+          line-height: 45px;
+          margin-top: 1.3rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 7rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 4%;
+        .titleWID {
+          font-size: 9vw;
+        }
+        .descWID {
+          width: 20%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 7rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 2rem;
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 6rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 17px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 43px;
+        line-height: 56px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 8rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 2px;
+        font-size: 16px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.5rem;
+      video {
+        width: 100vw !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 14px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 2rem 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+          .nameOfProject {
+            font-size: 19px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 15px;
+            margin-top: 10px;
+          }
+          .proImage {
+            width: 30%;
+            visibility: hidden;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-20px);
+              color: #dfd9cc;
+            }
+            .myTask {
+              transform: translateX(20px);
+              color: #dfd9cc;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 100%;
+      margin-top: 10rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 14px;
+        }
+      }
+      .descHowHelp {
+        font-size: 45px;
+        line-height: 55px;
+        margin-top: 2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 0rem;
+      width: 90%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 15px;
+            margin-top: 2.5rem;
+            margin-bottom: 0.3rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 15px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+        .sendMeBtn {
+          width: 115px;
+          height: 115px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 17px;
+            line-height: 115px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 15px;
+              margin-top: 2.5rem;
+              margin-bottom: 0.3rem;
+            }
+          }
+
+          input {
+            font-size: 15px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 65%;
+      background-position-y: 0%;
+      background-position-x: 140%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          text-align: inherit;
+          font-size: 130px;
+          margin-top: 26%;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7rem;
+        }
+        .lastNameOfMe {
+          text-align: inherit;
+          font-size: 130px;
+          letter-spacing: 0px;
+          margin-left: 3%;
+          line-height: 7rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          text-align: inherit;
+          font-size: 13px;
+          margin-top: 30px;
+          width: 60%;
+          line-height: 17px;
+          margin-left: 4%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 18px;
+          &::after {
+            top: 33px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        align-items: center;
+        .rightSideItems {
+          padding: 7px 0px;
+          a {
+            font-size: 13px;
+            padding-left: 14px;
+            &::after {
+              left: 0px;
+              width: 6px;
+              height: 6px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 3rem;
+      .wrapperAboutSection {
+        width: 95%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 18px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 48px;
+          margin-top: 1.3rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 8rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 4%;
+        .titleWID {
+          font-size: 8.5vw;
+        }
+        .descWID {
+          width: 20%;
+          font-size: 0px;
+          line-height: 20px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 19px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 1.5rem 2rem;
+            img {
+              width: 127%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 95%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 47px;
+        line-height: 62px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 8rem;
+      .titleDemo {
+        margin-left: 6%;
+        word-spacing: 4px;
+        font-size: 16px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 2.5rem;
+      video {
+        width: 100% !important;
+      }
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 8rem;
+      margin-left: 5%;
+      width: 100%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 16px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 1.7rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          .nameOfProject {
+            font-size: 18px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 12px;
+            margin-top: 0;
+          }
+          .proImage {
+            width: 30%;
+          }
+          &:hover {
+            .nameOfProject {
+              transform: translateX(-40px);
+              color: #d4ccbd;
+            }
+            .myTask {
+              transform: translateX(40px);
+              color: #d4ccbd;
+            }
+            .proImage {
+              clip-path: inset(0% 0% 0% 0%);
+              opacity: 1;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 95%;
+      margin-top: 11rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 17px;
+        }
+      }
+      .descHowHelp {
+        font-size: 50px;
+        line-height: 62px;
+        margin-top: 1.5rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 90%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 17px;
+            margin-top: 3rem;
+            margin-bottom: 0.6rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 16px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 15px;
+          }
+        }
+        .sendMeBtn {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin-top: 0rem;
+          margin-bottom: 5%;
+          span {
+            font-size: 18px;
+            line-height: 120px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 100%;
+          .wrapperLabel {
+            label {
+              font-size: 17px;
+              margin-top: 3rem;
+              margin-bottom: 0.6rem;
+            }
+          }
+
+          input {
+            font-size: 16px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 48%;
+      background-position-y: 3%;
+      background-position-x: 115%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 145px;
+          margin-top: 17%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 7.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 145px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 7.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 14px;
+          margin-top: 30px;
+          width: 55%;
+          line-height: 20px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 19px;
+          &::after {
+            top: 34px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0%;
+        .rightSideItems {
+          padding: 6px 0px;
+          a {
+            font-size: 13px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 6px;
+              height: 6px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 5rem;
+      .wrapperAboutSection {
+        width: 90%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 20px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 59px;
+          font-weight: 700;
+          line-height: 55px;
+          margin-top: 1.3rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 10rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 4%;
+        .titleWID {
+          font-size: 8vw;
+        }
+        .descWID {
+          width: 35%;
+          font-size: 13px;
+          line-height: 22px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 3rem;
+            img {
+              width: 120%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 95%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 56px;
+        line-height: 72px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 10rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 4px;
+        font-size: 19px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 95%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 19px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 23px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 16px;
+          }
+          .proImage {
+            width: 32%;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 90%;
+      margin-top: 12rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 18px;
+        }
+      }
+      .descHowHelp {
+        font-size: 59px;
+        line-height: 72px;
+        margin-top: 2.2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 19px;
+            margin-top: 4.5rem;
+            margin-bottom: 0.6rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 18px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 16px;
+          }
+        }
+        .sendMeBtn {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          margin-top: 2rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 21px;
+            line-height: 130px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 19px;
+              margin-top: 4.5rem;
+              margin-bottom: 0.6rem;
+            }
+          }
+
+          input {
+            font-size: 18px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 48%;
+      background-position-y: 3%;
+      background-position-x: 110%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 165px;
+          margin-top: 15%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 8.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 165px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 8.5rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 15px;
+          margin-top: 30px;
+          width: 46%;
+          line-height: 20px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 19px;
+          &::after {
+            top: 35px;
+            left: 50%;
+            height: 5px;
+            width: 5px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0;
+        .rightSideItems {
+          padding: 8px 0px;
+          a {
+            font-size: 14px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 5px;
+              height: 5px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 8rem;
+      .wrapperAboutSection {
+        width: 88%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 21px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 65px;
+          font-weight: 700;
+          line-height: 62px;
+          margin-top: 1.5rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 11rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        .titleWID {
+          font-size: 7.5vw;
+        }
+        .descWID {
+          width: 35%;
+          font-size: 15px;
+          line-height: 25px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 2rem 3.5rem;
+            img {
+              width: 125%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 95%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 21px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 63px;
+        line-height: 75px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 10rem;
+      .titleDemo {
+        margin-left: 4%;
+        word-spacing: 4px;
+        font-size: 20px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 90%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 21px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 28px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 17px;
+          }
+          .proImage {
+            width: 34%;
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 90%;
+      margin-top: 15rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 19px;
+        }
+      }
+      .descHowHelp {
+        font-size: 63px;
+        line-height: 75px;
+        margin-top: 2rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 21px;
+            margin-top: 4.5rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 20px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 18px;
+          }
+        }
+        .sendMeBtn {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          margin-top: 2rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 21px;
+            line-height: 130px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 21px;
+              margin-top: 4.5rem;
+              margin-bottom: 0.8rem;
+            }
+          }
+
+          input {
+            font-size: 20px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .homePage {
+    // responsive hero header section
+    .heroHeader {
+      background-image: url(../../assets/image/mainDarkMan.png);
+      background-size: 42%;
+      background-position-y: 5%;
+      background-position-x: 110%;
+      width: 100%;
+      height: 100vh;
+      .wrapperName {
+        .NameOfMe {
+          font-size: 172px;
+          margin-top: 10%;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 9rem;
+        }
+        .lastNameOfMe {
+          font-size: 172px;
+          letter-spacing: 0px;
+          margin-left: 5%;
+          line-height: 9rem;
+          margin-top: 0px;
+        }
+        .descHeroHeader {
+          font-size: 16px;
+          margin-top: 25px;
+          width: 42%;
+          line-height: 22px;
+          margin-left: 6%;
+        }
+      }
+    }
+    // top navbar
+    .wrapperNavbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      .navbarItem {
+        &:nth-child(1) {
+          margin-right: auto;
+        }
+        a {
+          margin: 0 1rem;
+          padding: 10px 10px;
+          font-size: 23px;
+          &::after {
+            top: 38px;
+            left: 50%;
+            height: 6px;
+            width: 6px;
+          }
+        }
+      }
+    }
+    // responsive right sticky navbar
+    .wrapperRightSidebar {
+      height: 100%;
+      width: 100%;
+      .rightSidebar {
+        padding-top: 10%;
+        position: sticky;
+        top: 3%;
+        right: 0;
+        .rightSideItems {
+          padding: 8px 0px;
+          a {
+            font-size: 14px;
+            padding-left: 13px;
+            &::after {
+              left: 0px;
+              width: 6px;
+              height: 6px;
+            }
+          }
+        }
+      }
+    }
+    // about section styles
+    .aboutSection {
+      margin-top: 8rem;
+      .wrapperAboutSection {
+        width: 85%;
+        margin-left: 5%;
+        div {
+          .titleAbout {
+            word-spacing: 4px;
+            font-size: 21px;
+            line-height: 25px;
+          }
+        }
+
+        .descAbout {
+          font-size: 70px;
+          font-weight: 700;
+          line-height: 65px;
+          margin-top: 1.5rem;
+          text-align: start;
+          span {
+            color: #ec4e39;
+          }
+        }
+      }
+    }
+    // what I do 2 section responsive
+    .WhatIDo2 {
+      margin-top: 12rem;
+      // coding
+      .wrapperWhatIDo2 {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 5%;
+        .titleWID {
+          font-size: 7.5vw;
+        }
+        .descWID {
+          width: 35%;
+          line-height: 27px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    // my skills section responsive
+    .mySkills {
+      width: 85%;
+      margin-left: 5%;
+      margin-top: 10rem;
+      .titleSkills {
+        word-spacing: 4px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    .mySkillsLogo {
+      .wrapperLogos {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .logoCuomn1,
+        .logoCuomn2,
+        .logoCuomn3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .wrapperImageLogo {
+            margin: 3rem 4rem;
+            img {
+              width: 115%;
+            }
+          }
+        }
+      }
+    }
+    // what I do section responsive
+    .wrapperWhatIdo {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 82%;
+      .wrapperTitleWhatIdo {
+        .titleWhatIdo {
+          word-spacing: 4px;
+          font-size: 21px;
+          line-height: 25px;
+        }
+      }
+      .textWhatIDo {
+        font-size: 70px;
+        line-height: 85px;
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+    // responsive demo works section
+    .wrapperDemoWorksTitle {
+      width: 100%;
+      margin-top: 10rem;
+      .titleDemo {
+        margin-left: 5%;
+        word-spacing: 4px;
+        font-size: 21px;
+      }
+    }
+    .wrapperDemoWorksVideo {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    // responsive my projects section
+    .myProjects {
+      margin-top: 10rem;
+      margin-left: 5%;
+      width: 85%;
+      .wrapperTitleProjects {
+        .titleProject {
+          word-spacing: 4px;
+          font-size: 21px;
+        }
+      }
+      .wrapperProjects {
+        margin-top: 3rem;
+        .eachProject {
+          padding: 3.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .nameOfProject {
+            font-size: 32px;
+            line-height: 45px;
+          }
+          .myTask {
+            font-size: 18px;
+          }
+          .proImage {
+            width: 35%;
+          }
+        }
+      }
+    }
+    // responsive how to help section
+    .wrapperHowToHelp {
+      margin-left: 5%;
+      width: 85%;
+      margin-top: 15rem;
+      .wrapperTitleHelp {
+        .titleHelp {
+          word-spacing: 3px;
+          font-size: 21px;
+        }
+      }
+      .descHowHelp {
+        font-size: 70px;
+        line-height: 83px;
+        margin-top: 1.5rem;
+      }
+    }
+    // responsive contact me section
+    .wrapperContactMe {
+      margin-left: 5%;
+      margin-top: 8rem;
+      width: 85%;
+      .contactMeForm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .wrapperLabelMessage {
+          .messageLabel {
+            font-size: 24px;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+          }
+        }
+        #msgInput {
+          width: 100%;
+          line-height: 35px;
+          font-size: 20px;
+          padding: 13px 0;
+          &::placeholder {
+            font-size: 20px;
+          }
+        }
+        .sendMeBtn {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-top: 3rem;
+          margin-bottom: 3%;
+          span {
+            font-size: 22px;
+            line-height: 140px;
+          }
+        }
+        .wrapperFormInput {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          margin-right: 6%;
+          width: 47%;
+          .wrapperLabel {
+            label {
+              font-size: 24px;
+              margin-top: 5rem;
+              margin-bottom: 1rem;
+            }
+          }
+
+          input {
+            font-size: 20px;
+            padding: 13px 0;
+            padding-left: 5px;
+            width: 100%;
+            &::placeholder {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

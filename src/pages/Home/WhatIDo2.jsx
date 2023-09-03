@@ -1,22 +1,6 @@
-import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { motion } from "framer-motion";
-import { ScrollTrigger } from "gsap/all";
 import WhatIDo2Items from "./WhatIDo2Items";
 
 export default function WhatIDo2({ mask }) {
-  //   let variants = {
-  //     leave: { clipPath: "inset(100% 0% 0% 100%)" },
-  //     enter: {
-  //       clipPath: "inset(0% 0% 0% 0%)",
-  //       transition: {
-  //         type: "tween",
-  //         duration: 0.7,
-  //         ease: "easeOut",
-  //       },
-  //     },
-  //   };
-
   return (
     <div className="container-fluid WhatIDo2">
       <div className="row">
@@ -46,7 +30,7 @@ export default function WhatIDo2({ mask }) {
           mask={mask}
           title="responsive"
           desc={`responsive websites and applications with
-           css frameworks like bootstrap or tailwind css`}
+           css frameworks.`}
         />
         {/*  */}
       </div>

@@ -10,6 +10,7 @@ import sassLogo from "../../assets/svg/sass-1.svg";
 import jsLogo from "../../assets/svg/logo-javascript.svg";
 import reactLogo from "../../assets/svg/react-2.svg";
 import gitLogo from "../../assets/svg/git-svg.svg";
+import { useState } from "react";
 import gitHubLogo from "../../assets/svg/github-2.svg";
 import tailwindLogo from "../../assets/svg/tailwindcss.svg";
 import LogoImage from "./LogoImage";
@@ -23,6 +24,18 @@ import SplitText from "../../utils/SplitText";
 let MySkills = memo(({ changeHover, mask }) => {
   let scopeRef = useRef(null);
   let titleSkillRef = useRef(null);
+  let [size, setSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    let handleResize = () => {
+      setSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [size]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -66,27 +79,65 @@ let MySkills = memo(({ changeHover, mask }) => {
           }}
           className="wrapperLogos"
         >
-          <div className="logoCuomn1">
-            <LogoImage imageSrc={jsLogo} imageAlt={"js logo"} />
-            <LogoImage imageSrc={bootstrapLogo} imageAlt={"bootstrap logo"} />
-            <LogoImage imageSrc={sassLogo} imageAlt={"sass logo"} />
-            <LogoImage imageSrc={cssLogo} imageAlt={"css logo"} />
-            <LogoImage imageSrc={htmlLogo} imageAlt={"html logo"} />
-          </div>
-          <div className="logoCuomn2">
-            <LogoImage imageSrc={reactLogo} imageAlt={"react logo"} />
-            <LogoImage imageSrc={reduxLogo} imageAlt={"redux logo"} />
-            <LogoImage imageSrc={muiLogo} imageAlt={"mui logo"} />
-            <LogoImage imageSrc={gsapLogo} imageAlt={"gsap logo"} />
-            <LogoImage imageSrc={gitLogo} imageAlt={"git-logo"} />
-          </div>
-          <div className="logoCuomn3">
-            <LogoImage imageSrc={framerLogo} imageAlt={"framer logo"} />
-            <LogoImage imageSrc={TSLogo} imageAlt={"typescript logo"} />
-            <LogoImage imageSrc={tailwindLogo} imageAlt={"tailwind logo"} />
-            <LogoImage imageSrc={formicLogo} imageAlt={"formik logo"} />
-            <LogoImage imageSrc={gitHubLogo} imageAlt={"github logo"} />
-          </div>
+          {size > 768 ? (
+            <>
+              <div className="logoCuomn1">
+                <LogoImage imageSrc={jsLogo} imageAlt={"js logo"} />
+                <LogoImage
+                  imageSrc={bootstrapLogo}
+                  imageAlt={"bootstrap logo"}
+                />
+                <LogoImage imageSrc={sassLogo} imageAlt={"sass logo"} />
+                <LogoImage imageSrc={cssLogo} imageAlt={"css logo"} />
+                <LogoImage imageSrc={htmlLogo} imageAlt={"html logo"} />
+              </div>
+              <div className="logoCuomn2">
+                <LogoImage imageSrc={reactLogo} imageAlt={"react logo"} />
+                <LogoImage imageSrc={reduxLogo} imageAlt={"redux logo"} />
+                <LogoImage imageSrc={muiLogo} imageAlt={"mui logo"} />
+                <LogoImage imageSrc={gsapLogo} imageAlt={"gsap logo"} />
+                <LogoImage imageSrc={gitLogo} imageAlt={"git-logo"} />
+              </div>
+              <div className="logoCuomn3">
+                <LogoImage imageSrc={framerLogo} imageAlt={"framer logo"} />
+                <LogoImage imageSrc={TSLogo} imageAlt={"typescript logo"} />
+                <LogoImage imageSrc={tailwindLogo} imageAlt={"tailwind logo"} />
+                <LogoImage imageSrc={formicLogo} imageAlt={"formik logo"} />
+                <LogoImage imageSrc={gitHubLogo} imageAlt={"github logo"} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="logoCuomn1">
+                <LogoImage imageSrc={sassLogo} imageAlt={"sass logo"} />
+                <LogoImage imageSrc={cssLogo} imageAlt={"css logo"} />
+                <LogoImage imageSrc={htmlLogo} imageAlt={"html logo"} />
+              </div>
+              <div className="logoCuomn2">
+                <LogoImage
+                  imageSrc={bootstrapLogo}
+                  imageAlt={"bootstrap logo"}
+                />
+                <LogoImage imageSrc={jsLogo} imageAlt={"js logo"} />
+                <LogoImage imageSrc={reactLogo} imageAlt={"react logo"} />
+              </div>
+              <div className="logoCuomn3">
+                <LogoImage imageSrc={reduxLogo} imageAlt={"redux logo"} />
+                <LogoImage imageSrc={muiLogo} imageAlt={"mui logo"} />
+                <LogoImage imageSrc={gsapLogo} imageAlt={"gsap logo"} />
+              </div>
+              <div className="logoCuomn1">
+                <LogoImage imageSrc={gitLogo} imageAlt={"git-logo"} />
+                <LogoImage imageSrc={framerLogo} imageAlt={"framer logo"} />
+                <LogoImage imageSrc={TSLogo} imageAlt={"typescript logo"} />
+              </div>
+              <div className="logoCuomn1">
+                <LogoImage imageSrc={tailwindLogo} imageAlt={"tailwind logo"} />
+                <LogoImage imageSrc={formicLogo} imageAlt={"formik logo"} />
+                <LogoImage imageSrc={gitHubLogo} imageAlt={"github logo"} />
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
