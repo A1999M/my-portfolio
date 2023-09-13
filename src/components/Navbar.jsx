@@ -1,11 +1,10 @@
 import { memo, useContext } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import MagneticNav from "./MagneticNav";
 import MaskStatus from "../context/MaskStatus";
 import "./style.scss";
 
-let Navbar = memo(({ mask }) => {
+let Navbar = memo(({ mask, windowSize }) => {
   const [, , index] = useContext(MaskStatus);
   let ulVarient = {
     hidden: { opacity: 0 },
@@ -34,10 +33,16 @@ let Navbar = memo(({ mask }) => {
   return (
     <div
       style={
-        !mask
-          ? { visibility: "visible", height: "fit-content" }
-          : { visibility: "hidden", height: "fit-content" }
+        (!mask && { visibility: "visible", height: "fit-content" }) ||
+        (mask &&
+          windowSize < 992 && {
+            visibility: "visible",
+            height: "fit-content",
+          }) ||
+        (mask &&
+          windowSize >= 992 && { visibility: "hidden", height: "fit-content" })
       }
+      data-mask={mask}
       className="col-12"
     >
       <motion.ul
@@ -48,22 +53,46 @@ let Navbar = memo(({ mask }) => {
       >
         <motion.li variants={liVarient} className="navbarItem">
           <MagneticNav>
-            <Link to={"/"}>home</Link>
+            <a
+              data-scroll-to="#headerSection"
+              data-scroll-to-offset="-60"
+              href="#headerSection"
+            >
+              home
+            </a>
           </MagneticNav>
         </motion.li>
         <motion.li variants={liVarient} className="navbarItem">
           <MagneticNav>
-            <Link to={"/work"}>work</Link>
+            <a
+              data-scroll-to="#worksSection"
+              data-scroll-to-offset="-60"
+              href="#worksSection"
+            >
+              work
+            </a>
           </MagneticNav>
         </motion.li>
         <motion.li variants={liVarient} className="navbarItem">
           <MagneticNav>
-            <Link to={"/about-us"}>about</Link>
+            <a
+              data-scroll-to="#aboutSection"
+              data-scroll-to-offset="-60"
+              href="#aboutSection"
+            >
+              about
+            </a>
           </MagneticNav>
         </motion.li>
         <motion.li variants={liVarient} className="navbarItem">
           <MagneticNav>
-            <Link to={"/contact"}>contact</Link>
+            <a
+              data-scroll-to="#contactMeSection"
+              data-scroll-to-offset="-60"
+              href="#contactMeSection"
+            >
+              contact
+            </a>
           </MagneticNav>
         </motion.li>
       </motion.ul>

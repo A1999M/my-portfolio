@@ -293,7 +293,6 @@ $sticky-item-colors: #000;
       padding: 8px 0px;
       a {
         font-size: 16px;
-        color: #b4b4b4;
         text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
@@ -310,6 +309,30 @@ $sticky-item-colors: #000;
           content: "";
           background-color: #d8d8d8;
           border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+.wrapperRightSidebar[data-mask="false"] {
+  .rightSidebar {
+    .rightSideItems {
+      a {
+        color: #b4b4b4;
+        &::after {
+          background-color: #d8d8d8;
+        }
+      }
+    }
+  }
+}
+.wrapperRightSidebar[data-mask="true"] {
+  .rightSidebar {
+    .rightSideItems {
+      a {
+        color: #000;
+        &::after {
+          background-color: #000;
         }
       }
     }

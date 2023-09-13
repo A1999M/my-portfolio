@@ -47,7 +47,7 @@ export default function Loader() {
         index === words.length - 1 && { clipPath: "circle(140% at 50% -300%)" }
       }
       transition={{ type: "tween", ease: "easeOut", duration: 0.8 }}
-      style={{ height: loaderSize.height, width: loaderSize.width }}
+      style={{ height: loaderSize.height, width: "100vw" }}
       className="loader"
     >
       <motion.p

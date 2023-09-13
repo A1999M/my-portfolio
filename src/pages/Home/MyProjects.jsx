@@ -1,6 +1,9 @@
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
+import tnganImage from "../../assets/image/tngan.png";
+import myOwnPortfolio from "../../assets/image/myOwnPortfolio.png";
+import youtubeImage from "../../assets/image/youtubeClone.png";
 import EachProject from "./EachProject";
 import { gsap } from "gsap";
 
@@ -36,7 +39,11 @@ export default function MyProjects({ mask }) {
   return (
     <>
       <div
-        style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
+        style={
+          mask
+            ? { visibility: "hidden", cursor: "pointer" }
+            : { visibility: "visible", cursor: "pointer" }
+        }
         ref={scopeRef}
         className="col-12 myProjects"
       >
@@ -56,24 +63,14 @@ export default function MyProjects({ mask }) {
           <EachProject
             name="tangan clone (awwwards site of the day)"
             index={2}
-            imageSrc={
-              "https://kulbachny.com/wp-content/uploads/2021/11/612c973f0e8c5808783448.jpeg"
-            }
+            imageSrc={tnganImage}
           />
           <EachProject
             name="my own portfolio"
             index={4}
-            imageSrc={
-              "https://kulbachny.com/wp-content/uploads/2021/11/5cb5ecda03fc1741923404.jpeg"
-            }
+            imageSrc={myOwnPortfolio}
           />
-          <EachProject
-            name="youtube clone"
-            index={1}
-            imageSrc={
-              "https://kulbachny.com/wp-content/uploads/2022/11/Crocs.jpeg"
-            }
-          />
+          <EachProject name="youtube clone" index={1} imageSrc={youtubeImage} />
         </ul>
       </div>
     </>

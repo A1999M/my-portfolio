@@ -66,7 +66,7 @@ let AboutSection = memo(
 
     return (
       <>
-        <div ref={scopeRef} className="col-12 aboutSection">
+        <div ref={scopeRef} id="aboutSection" className="col-12 aboutSection">
           <div ref={triggerDesc} className="wrapperAboutSection">
             <div>
               <p ref={titleRef} style={{ color: color }} className="titleAbout">
@@ -107,9 +107,9 @@ let AboutSection = memo(
                 className="descAbout"
               >
                 I'm Currently Learning{" "}
-                <span style={{ color: spanColor }}>Next.js</span> , And I Have a
-                Strong Interest In 3D Websites. As a Result, I Allocate a Amount
-                Of My Time To Learning 3D Libraries.
+                <span style={{ color: spanColor }}>Next.js</span> , And I am
+                Very Interested In 3D Websites. As a Result, I Allocate a Amount
+                Of My Time To Learn 3D Libraries Like Three.
               </p>
             )}
             <p></p>

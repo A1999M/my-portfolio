@@ -23,7 +23,7 @@ export default function MsgModal({
       <motion.div
         style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
         key={showModal}
-        initial={{ opacity: 0, x: 100, zIndex: -1 }}
+        initial={{ opacity: 0, x: -100, zIndex: -1 }}
         animate={showModal && { opacity: 1, x: 0, zIndex: 2 }}
         exit={{ opacity: 0, x: 100, zIndex: -1 }}
         transition={{ type: "spring" }}

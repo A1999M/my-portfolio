@@ -86,8 +86,8 @@ export default function WhatIDo({ mask, changeMix, changeHover }) {
               ref={whatIdoRef}
               className="textWhatIDo"
             >
-              I Develop Websites And Web Applications, Using Animation Libraries
-              Like <span style={{ color: "#ec4e39" }}>GSAP</span> and{" "}
+              I Develop Websites And Web Apps, Using Animation Libraries Like{" "}
+              <span style={{ color: "#ec4e39" }}>GSAP</span> and{" "}
               <span style={{ color: "#ec4e39" }}>Framer</span>{" "}
               <span style={{ color: "#ec4e39" }}>Motion</span> That Makes My
               Applications More Interesting Than It Actually is.

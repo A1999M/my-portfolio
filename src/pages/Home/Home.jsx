@@ -12,6 +12,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import MyProjects from "./MyProjects";
 import HowHelp from "./HowHelp";
 import ContactMe from "./ContactMe";
+import pressBtn from "../../assets/svg/mask/pressHand.svg";
 import Sidebar from "../../components/Sidebar";
 import "./Home.scss";
 import Loader from "../../components/Loader";
@@ -21,10 +22,21 @@ export default function Home() {
   let [mixStatus, setMixStatus] = useContext(MaskStatus);
   let { scrollY } = useScroll();
   let [yPos, setYPos] = useState(0);
+  let [sizeW, setSizeW] = useState(window.innerWidth);
   let { x, y } = useMousePosition();
   let [isHover, setIsHover] = useState(false);
   let size = isHover ? 350 : 60;
   let mix = mixStatus ? "difference" : "normal";
+
+  useEffect(() => {
+    let handlerResize = () => {
+      setSizeW(window.innerWidth);
+    };
+    window.addEventListener("resize", handlerResize);
+    return () => {
+      window.removeEventListener("resize", handlerResize);
+    };
+  }, []);
 
   useEffect(() => {
     document.documentElement.scrollTo({
@@ -49,11 +61,11 @@ export default function Home() {
       >
         {/* normal content  */}
         <div className="row darkLayer p-0">
-          <Navbar mask={false} visibility="visible" />
+          <Navbar windowSize={sizeW} mask={false} visibility="visible" />
           <div className="col-1 d-none d-md-block">
-            <Sidebar changeMix={setMixStatus} mask={false} />
+            <Sidebar windowSize={sizeW} changeMix={setMixStatus} mask={false} />
           </div>
-          <div className="col-10 col-md-9 col-lg-10">
+          <div className="col-10 col-md-10 col-lg-10">
             <HeroHeader
               mask={false}
               color={"#e3e3e3"}
@@ -86,23 +98,26 @@ export default function Home() {
             />
             <ContactMe mask={false} />
           </div>
-          <div className="col-2 col-lg-1 ps-0">
-            <RightSidebar positionY={yPos} />
+          <div className="col-2 col-md-1 ps-0">
+            <RightSidebar mask={false} positionY={yPos} />
           </div>
         </div>
         {/* mask content  */}
         <motion.div
           className="row maskLayer p-0"
-          animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y + yPos - size / 2}px`,
-            WebkitMaskSize: `${size}px`,
-            mixBlendMode: mix,
-          }}
+          data-mobile={sizeW < 992 ? "true" : "false"}
+          animate={
+            sizeW > 992 && {
+              WebkitMaskPosition: `${x - size / 2}px ${y + yPos - size / 2}px`,
+              WebkitMaskSize: `${size}px`,
+              mixBlendMode: mix,
+            }
+          }
           transition={{ type: "tween", duration: 0.5, ease: "backOut" }}
         >
-          <Navbar mask={true} visibility="hidden" />
+          <Navbar windowSize={sizeW} mask={true} visibility="hidden" />
           <div className="col-1 d-none d-md-block">
-            <Sidebar changeMix={setMixStatus} mask={true} />
+            <Sidebar windowSize={sizeW} changeMix={setMixStatus} mask={true} />
           </div>
           <div className="col-10 col-md-9 col-lg-10">
             <HeroHeader
@@ -137,7 +152,7 @@ export default function Home() {
             <ContactMe mask={true} />
           </div>
           <div className="col-2 col-lg-1 ps-0">
-            <RightSidebar positionY={yPos} />
+            <RightSidebar mask={true} positionY={yPos} />
           </div>
         </motion.div>
       </motion.div>

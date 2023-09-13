@@ -36,6 +36,18 @@
         }
       }
     }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 60px;
+          line-height: 3.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 53px;
+          line-height: 3.5rem;
+        }
+      }
+    }
     // top navbar
     .wrapperNavbar {
       display: flex;
@@ -329,6 +341,17 @@
         }
       }
     }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 0px 12px;
+      top: 10%;
+      left: 100%;
+      p {
+        font-size: 12px;
+        margin: 0 10px;
+      }
+    }
   }
 }
 @media (min-width: 360px) {
@@ -366,6 +389,18 @@
           margin-left: 3rem;
           margin-right: auto;
           text-align: center;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 62px;
+          line-height: 3.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 55px;
+          line-height: 3.5rem;
         }
       }
     }
@@ -662,6 +697,17 @@
         }
       }
     }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 2px 15px;
+      top: 10%;
+      left: 100%;
+      p {
+        font-size: 13px;
+        margin: 0 10px;
+      }
+    }
   }
 }
 @media (min-width: 375px) {
@@ -699,6 +745,18 @@
           margin-left: 3rem;
           margin-right: auto;
           text-align: center;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 65px;
+          line-height: 3.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 57px;
+          line-height: 3.5rem;
         }
       }
     }
@@ -1034,6 +1092,18 @@
         }
       }
     }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 67px;
+          line-height: 3.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 60px;
+          line-height: 3.5rem;
+        }
+      }
+    }
     // top navbar
     .wrapperNavbar {
       display: flex;
@@ -1366,6 +1436,18 @@
         }
       }
     }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 65px;
+          line-height: 3.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 60px;
+          line-height: 3.5rem;
+        }
+      }
+    }
     // top navbar
     .wrapperNavbar {
       display: flex;
@@ -1658,6 +1740,17 @@
         }
       }
     }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 2px 15px;
+      top: 10%;
+      left: 100%;
+      p {
+        font-size: 13px;
+        margin: 0 10px;
+      }
+    }
   }
 }
 @media (min-width: 540px) {
@@ -1694,14 +1787,14 @@
           margin-top: 29%;
           letter-spacing: 0px;
           margin-left: 10%;
-          line-height: 7rem;
+          line-height: 6rem;
         }
         .lastNameOfMe {
           text-align: center;
-          font-size: 130px;
+          font-size: 127px;
           letter-spacing: 0px;
           margin-left: 10%;
-          line-height: 7rem;
+          line-height: 6rem;
           margin-top: 0px;
         }
         .descHeroHeader {
@@ -1712,6 +1805,18 @@
           margin-left: 7.5rem;
           margin-right: auto;
           text-align: center;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 90px;
+          line-height: 5.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 86px;
+          line-height: 5.5rem;
         }
       }
     }
@@ -2007,6 +2112,17 @@
         }
       }
     }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 2px 18px;
+      top: 85%;
+      left: 120rem;
+      p {
+        font-size: 14px;
+        margin: 0 10px;
+      }
+    }
   }
 }
 @media (min-width: 768px) {
@@ -2046,6 +2162,18 @@
         }
       }
     }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 118px;
+          line-height: 6.6rem;
+        }
+        .lastNameOfMe {
+          font-size: 112px;
+          line-height: 6.7rem;
+        }
+      }
+    }
     // top navbar
     .wrapperNavbar {
       display: flex;
@@ -2080,14 +2208,14 @@
         right: 0%;
         align-items: center;
         .rightSideItems {
-          padding: 7px 0px;
+          padding: 5px 0px;
           a {
-            font-size: 13px;
-            padding-left: 14px;
+            font-size: 11px;
+            padding-left: 12px;
             &::after {
               left: 0px;
-              width: 6px;
-              height: 6px;
+              width: 5px;
+              height: 5px;
             }
           }
         }
@@ -2098,7 +2226,7 @@
       margin-top: 3rem;
       .wrapperAboutSection {
         width: 95%;
-        margin-left: 5%;
+        margin-left: 3%;
         div {
           .titleAbout {
             word-spacing: 4px;
@@ -2108,9 +2236,9 @@
         }
 
         .descAbout {
-          font-size: 50px;
+          font-size: 2.7em;
           font-weight: 700;
-          line-height: 48px;
+          line-height: 42px;
           margin-top: 1.3rem;
           text-align: start;
           span {
@@ -2337,6 +2465,17 @@
         }
       }
     }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 2px 18px;
+      top: 85%;
+      left: 100%;
+      p {
+        font-size: 15px;
+        margin: 0 10px;
+      }
+    }
   }
 }
 @media (min-width: 992px) {
@@ -2370,6 +2509,18 @@
           width: 55%;
           line-height: 20px;
           margin-left: 6%;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 145px;
+          line-height: 7.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 145px;
+          line-height: 7.5rem;
         }
       }
     }
@@ -2424,19 +2575,19 @@
       margin-top: 5rem;
       .wrapperAboutSection {
         width: 90%;
-        margin-left: 5%;
+        margin-left: 3%;
         div {
           .titleAbout {
             word-spacing: 4px;
-            font-size: 20px;
+            font-size: 19px;
             line-height: 25px;
           }
         }
 
         .descAbout {
-          font-size: 59px;
+          font-size: 3em;
           font-weight: 700;
-          line-height: 55px;
+          line-height: 49px;
           margin-top: 1.3rem;
           text-align: start;
           span {
@@ -2501,7 +2652,7 @@
     // what I do section responsive
     .wrapperWhatIdo {
       margin-top: 10rem;
-      margin-left: 5%;
+      margin-left: 3%;
       width: 95%;
       .wrapperTitleWhatIdo {
         .titleWhatIdo {
@@ -2511,8 +2662,8 @@
         }
       }
       .textWhatIDo {
-        font-size: 56px;
-        line-height: 72px;
+        font-size: 3.2em;
+        line-height: 65px;
         margin-top: 1.5rem;
         text-align: start;
       }
@@ -2642,6 +2793,28 @@
             }
           }
         }
+        .emailInput {
+          margin-right: 0;
+        }
+        .orgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+        .msgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 5px 20px;
+      top: 85%;
+      left: 100%;
+      p {
+        font-size: 16px;
+        margin: 0 10px;
       }
     }
   }
@@ -2677,6 +2850,18 @@
           width: 46%;
           line-height: 20px;
           margin-left: 6%;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 165px;
+          line-height: 8.5rem;
+        }
+        .lastNameOfMe {
+          font-size: 165px;
+          line-height: 8.5rem;
         }
       }
     }
@@ -2730,8 +2915,8 @@
     .aboutSection {
       margin-top: 8rem;
       .wrapperAboutSection {
-        width: 88%;
-        margin-left: 5%;
+        width: 90%;
+        margin-left: 3%;
         div {
           .titleAbout {
             word-spacing: 4px;
@@ -2741,7 +2926,7 @@
         }
 
         .descAbout {
-          font-size: 65px;
+          font-size: 3.85em;
           font-weight: 700;
           line-height: 62px;
           margin-top: 1.5rem;
@@ -2947,6 +3132,28 @@
             }
           }
         }
+        .emailInput {
+          margin-right: 0;
+        }
+        .orgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+        .msgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 6px 20px;
+      top: 85%;
+      left: 100%;
+      p {
+        font-size: 16px;
+        margin: 0 10px;
       }
     }
   }
@@ -2982,6 +3189,18 @@
           width: 42%;
           line-height: 22px;
           margin-left: 6%;
+        }
+      }
+    }
+    .heroHeader[data-mask="true"] {
+      .wrapperName {
+        .NameOfMe {
+          font-size: 172px;
+          line-height: 9rem;
+        }
+        .lastNameOfMe {
+          font-size: 172px;
+          line-height: 9rem;
         }
       }
     }
@@ -3035,7 +3254,7 @@
     .aboutSection {
       margin-top: 8rem;
       .wrapperAboutSection {
-        width: 85%;
+        width: 90%;
         margin-left: 5%;
         div {
           .titleAbout {
@@ -3046,9 +3265,9 @@
         }
 
         .descAbout {
-          font-size: 70px;
+          font-size: 4.1em;
           font-weight: 700;
-          line-height: 65px;
+          line-height: 62px;
           margin-top: 1.5rem;
           text-align: start;
           span {
@@ -3112,7 +3331,7 @@
     .wrapperWhatIdo {
       margin-top: 10rem;
       margin-left: 5%;
-      width: 82%;
+      width: 85%;
       .wrapperTitleWhatIdo {
         .titleWhatIdo {
           word-spacing: 4px;
@@ -3121,7 +3340,7 @@
         }
       }
       .textWhatIDo {
-        font-size: 70px;
+        font-size: 4.1em;
         line-height: 85px;
         margin-top: 1.5rem;
         text-align: start;
@@ -3251,6 +3470,28 @@
             }
           }
         }
+        .emailInput {
+          margin-right: 0;
+        }
+        .orgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+        .msgInput {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    // responsive modal
+    .wrapper-modal {
+      z-index: 2;
+      padding: 10px 20px;
+      top: 85%;
+      left: 100%;
+      p {
+        font-size: 18px;
+        margin: 0 10px;
       }
     }
   }

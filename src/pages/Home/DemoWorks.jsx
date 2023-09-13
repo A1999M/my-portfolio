@@ -64,7 +64,7 @@ export default function DemoWorks({ mask }) {
 
   return (
     <>
-      <div className="col-12">
+      <div id="worksSection" className="col-12">
         <div ref={scopeRef} className="wrapperDemoWorksTitle">
           <p
             style={mask ? { visibility: "hidden" } : { visibility: "visible" }}

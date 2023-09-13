@@ -65,6 +65,7 @@ let HeroHeader = memo(
 
     return (
       <div
+        id="headerSection"
         ref={scopeRef}
         data-mask={mask}
         className="container-fluid heroHeader"

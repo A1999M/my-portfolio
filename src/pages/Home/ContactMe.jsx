@@ -174,6 +174,7 @@ export default function ContactMe({ mask }) {
         message={modalMessageRef.current}
       />
       <div
+        id="contactMeSection"
         style={mask ? { visibility: "hidden" } : { visibility: "visible" }}
         ref={scopeRef}
         className="col-12"
